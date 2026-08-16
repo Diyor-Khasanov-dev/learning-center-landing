@@ -200,11 +200,12 @@ const TESTIMONIALS = [
   {
     quote:
       'Modme-style system transformed our learning center completely. Before, we lost 30% of incoming leads because managers forgot to call back. Now everything is tracked, and our monthly revenue grew by 45% in 6 months.',
-    author: 'Dilshod Rahmatov',
+    author: 'Jane Smith',
     role: 'Founder & CEO',
     company: 'Apex Education Center (4 Branches)',
     stats: '+45% Revenue Growth',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    image:
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
   },
   {
     quote:
@@ -213,16 +214,18 @@ const TESTIMONIALS = [
     role: 'Academic Director',
     company: 'Bright Minds Language Academy',
     stats: '2 Hours Saved Daily',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+    image:
+      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
   },
   {
     quote:
       'Managing 6 branches used to be a nightmare with Excel. With EduSphere, I can see real-time student count, cash flow, teacher attendance, and sales performance from my smartphone anywhere in the world.',
-    author: 'Jasur Alimov',
+    author: 'John Doe',
     role: 'General Director',
     company: 'ProTech IT Academy',
     stats: '6 Branches Unified',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    image:
+      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
   },
 ]
 
@@ -784,7 +787,7 @@ export default function Home() {
                 { id: 'admin' as RoleFilter, label: 'Admin & Owners' },
                 { id: 'sales' as RoleFilter, label: 'CRM & Sales' },
                 { id: 'teacher' as RoleFilter, label: 'Teachers' },
-                { id: 'student' as RoleFilter, label: 'Students & Parents' },
+                // { id: 'student' as RoleFilter, label: 'Students & Parents' },
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -1238,7 +1241,7 @@ export default function Home() {
             </p>
 
             {/* Monthly / Annual Toggle */}
-            <div className='pt-4 inline-flex items-center gap-3 bg-[#121428] p-1.5 rounded-full border border-white/10'>
+            <div className='px-2 inline-flex items-center gap-3 bg-[#121428] p-1.5 rounded-full border border-white/10'>
               <button
                 onClick={() => setBillingCycle('monthly')}
                 className={`rounded-full px-5 py-2 text-xs font-semibold transition-all ${
