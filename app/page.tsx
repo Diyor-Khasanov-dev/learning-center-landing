@@ -16,7 +16,7 @@ import { DemoModal } from '@/components/landing/DemoModal'
 export default function Home() {
   return (
     <DemoModalProvider>
-      <div className='min-h-screen bg-[#07080e] text-slate-100 font-sans selection:bg-violet-500 selection:text-white relative overflow-x-hidden'>
+      <div className='min-h-screen bg-slate-50 dark:bg-[#07080e] text-slate-800 dark:text-slate-100 font-sans selection:bg-violet-500 selection:text-white relative overflow-x-hidden transition-colors duration-200'>
         <Navbar />
         <main>
           <HeroSection />

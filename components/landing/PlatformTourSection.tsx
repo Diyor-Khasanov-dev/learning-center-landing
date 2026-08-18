@@ -15,14 +15,14 @@ export function PlatformTourSection() {
     <section id='tour' className='py-24 relative overflow-hidden'>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='text-center max-w-3xl mx-auto mb-16 space-y-4'>
-          <div className='inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold text-cyan-300'>
-            <BarChart3 className='h-4 w-4 text-cyan-400' />
+          <div className='inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold text-cyan-700 dark:text-cyan-300'>
+            <BarChart3 className='h-4 w-4 text-cyan-600 dark:text-cyan-400' />
             <span>Interactive Workflow</span>
           </div>
-          <h2 className='text-3xl sm:text-4xl font-bold tracking-tight'>
+          <h2 className='text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white'>
             Take a closer look inside the platform
           </h2>
-          <p className='text-slate-400 text-base'>
+          <p className='text-slate-600 dark:text-slate-400 text-base'>
             Click through the core workflows to experience how EduSphere simplifies daily management for learning centers.
           </p>
         </div>
@@ -35,8 +35,8 @@ export function PlatformTourSection() {
               onClick={() => setActiveTourTab(tab.id)}
               className={`rounded-xl px-5 py-3 text-sm font-semibold transition-all border cursor-pointer ${
                 activeTourTab === tab.id
-                  ? 'border-violet-500 bg-violet-600/20 text-white shadow-lg shadow-violet-600/20'
-                  : 'border-white/10 bg-[#0e1022] text-slate-400 hover:text-white hover:bg-white/5'
+                  ? 'border-violet-500 bg-violet-600 text-white dark:bg-violet-600/20 shadow-lg shadow-violet-600/20'
+                  : 'border-slate-200 dark:border-white/10 bg-white dark:bg-[#0e1022] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5'
               }`}
             >
               {tab.label}
@@ -45,23 +45,23 @@ export function PlatformTourSection() {
         </div>
 
         {/* Active Workflow Card */}
-        <div className='rounded-2xl border border-white/15 bg-[#0d0f20] p-6 md:p-10 shadow-2xl relative overflow-hidden'>
+        <div className='rounded-2xl border border-slate-200/80 dark:border-white/15 bg-white dark:bg-[#0d0f20] p-6 md:p-10 shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors duration-200'>
           <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 items-center'>
             <div className='lg:col-span-5 space-y-6'>
-              <span className='inline-block text-xs font-bold uppercase tracking-wider text-violet-400 bg-violet-500/10 px-3 py-1 rounded-full border border-violet-500/20'>
+              <span className='inline-block text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-400 bg-violet-500/10 px-3 py-1 rounded-full border border-violet-500/20'>
                 {currentTourData.label} Module
               </span>
 
-              <h3 className='text-2xl sm:text-3xl font-bold text-white'>{currentTourData.title}</h3>
+              <h3 className='text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white'>{currentTourData.title}</h3>
 
-              <p className='text-slate-300 text-sm leading-relaxed'>{currentTourData.desc}</p>
+              <p className='text-slate-600 dark:text-slate-300 text-sm leading-relaxed'>{currentTourData.desc}</p>
 
-              <div className='grid grid-cols-3 gap-3 pt-4 border-t border-white/10'>
+              <div className='grid grid-cols-3 gap-3 pt-4 border-t border-slate-200 dark:border-white/10'>
                 {currentTourData.metrics.map((m, idx) => (
-                  <div key={idx} className='bg-white/[0.03] p-3 rounded-xl border border-white/5'>
-                    <div className='text-[10px] text-slate-400 font-medium'>{m.label}</div>
-                    <div className='text-sm sm:text-base font-bold text-white mt-1'>{m.val}</div>
-                    <div className='text-[10px] text-emerald-400 font-semibold mt-0.5'>{m.trend}</div>
+                  <div key={idx} className='bg-slate-50 dark:bg-white/[0.03] p-3 rounded-xl border border-slate-200/80 dark:border-white/5'>
+                    <div className='text-[10px] text-slate-500 dark:text-slate-400 font-medium'>{m.label}</div>
+                    <div className='text-sm sm:text-base font-bold text-slate-900 dark:text-white mt-1'>{m.val}</div>
+                    <div className='text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold mt-0.5'>{m.trend}</div>
                   </div>
                 ))}
               </div>
@@ -76,7 +76,7 @@ export function PlatformTourSection() {
             </div>
 
             {/* Graphical Preview Window */}
-            <div className='lg:col-span-7 bg-[#070812] rounded-xl border border-white/10 p-5 space-y-4 shadow-inner'>
+            <div className='lg:col-span-7 bg-slate-900 dark:bg-[#070812] text-white rounded-xl border border-slate-800 dark:border-white/10 p-5 space-y-4 shadow-inner'>
               <div className='flex items-center justify-between border-b border-white/10 pb-3'>
                 <div className='flex items-center gap-2 text-xs font-mono text-slate-400'>
                   <div className='h-2.5 w-2.5 rounded-full bg-violet-400' />

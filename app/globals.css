@@ -1,25 +1,39 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar for dark UI */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
   background: #07080e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e223d;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e223d;
+}
+
 ::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
   background: #3b82f6;
 }
 
@@ -28,6 +42,13 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 2px solid #a78bfa;
+  outline: 2px solid #6366f1;
   outline-offset: 2px;
+}
+
+.dark button:focus-visible,
+.dark a:focus-visible,
+.dark input:focus-visible,
+.dark select:focus-visible {
+  outline: 2px solid #a78bfa;
 }

@@ -11,14 +11,14 @@ export function FaqSection() {
     <section id='faq' className='py-24 relative'>
       <div className='mx-auto max-w-5xl px-6'>
         <div className='text-center max-w-2xl mx-auto mb-16 space-y-4'>
-          <div className='inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold text-violet-300'>
-            <HelpCircle className='h-4 w-4 text-violet-400' />
+          <div className='inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold text-violet-700 dark:text-violet-300'>
+            <HelpCircle className='h-4 w-4 text-violet-600 dark:text-violet-400' />
             <span>Got Questions?</span>
           </div>
-          <h2 className='text-3xl sm:text-4xl font-bold tracking-tight'>
+          <h2 className='text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white'>
             Frequently Asked Questions
           </h2>
-          <p className='text-slate-400 text-base'>
+          <p className='text-slate-600 dark:text-slate-400 text-base'>
             Everything you need to know about setting up EduSphere in your learning center.
           </p>
         </div>
@@ -29,22 +29,22 @@ export function FaqSection() {
             return (
               <div
                 key={idx}
-                className='rounded-2xl border border-white/10 bg-[#0e1022] overflow-hidden transition-all'
+                className='rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white dark:bg-[#0e1022] overflow-hidden transition-all shadow-xs dark:shadow-none'
               >
                 <button
                   onClick={() => setOpenFaq(isOpen ? null : idx)}
                   className='w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer'
                 >
-                  <span className='text-base font-semibold text-white'>{faq.q}</span>
+                  <span className='text-base font-semibold text-slate-900 dark:text-white'>{faq.q}</span>
                   <ChevronDown
-                    className={`h-5 w-5 text-slate-400 transition-transform duration-300 shrink-0 ${
-                      isOpen ? 'rotate-180 text-violet-400' : ''
+                    className={`h-5 w-5 text-slate-500 dark:text-slate-400 transition-transform duration-300 shrink-0 ${
+                      isOpen ? 'rotate-180 text-violet-600 dark:text-violet-400' : ''
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className='px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4'>
+                  <div className='px-6 pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-white/5 pt-4'>
                     {faq.a}
                   </div>
                 )}
