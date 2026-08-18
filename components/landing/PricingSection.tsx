@@ -2,12 +2,15 @@
 
 import React, { useState } from 'react'
 import { DollarSign, CheckCircle2 } from 'lucide-react'
-import { PRICING_PLANS } from '@/data/landing-data'
 import { useDemoModal } from '@/context/DemoModalContext'
+import { useLanguage } from '@/context/LanguageContext'
+import { TRANSLATIONS } from '@/data/translations'
 
 export function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('annual')
   const { openDemoModal } = useDemoModal()
+  const { language } = useLanguage()
+  const t = TRANSLATIONS[language].pricing
 
   return (
     <section id='pricing' className='py-24 bg-slate-100/70 dark:bg-[#0a0c1a]/90 border-y border-slate-200/80 dark:border-white/10 relative transition-colors duration-200'>
@@ -15,13 +18,13 @@ export function PricingSection() {
         <div className='text-center max-w-3xl mx-auto mb-12 space-y-4'>
           <div className='inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold text-emerald-700 dark:text-emerald-300'>
             <DollarSign className='h-4 w-4 text-emerald-600 dark:text-emerald-400' />
-            <span>Transparent Pricing</span>
+            <span>{t.badge}</span>
           </div>
           <h2 className='text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white'>
-            Simple plans for centers of all sizes
+            {t.heading}
           </h2>
           <p className='text-slate-600 dark:text-slate-400 text-base'>
-            No hidden setup fees. Upgrade or adjust your branch plan anytime as you grow.
+            {t.subheading}
           </p>
 
           {/* Monthly / Annual Toggle */}
@@ -32,7 +35,7 @@ export function PricingSection() {
                 billingCycle === 'monthly' ? 'bg-violet-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              Monthly Billing
+              {t.monthlyBilling}
             </button>
             <button
               onClick={() => setBillingCycle('annual')}
@@ -40,9 +43,9 @@ export function PricingSection() {
                 billingCycle === 'annual' ? 'bg-violet-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              <span>Annual Billing</span>
+              <span>{t.annualBilling}</span>
               <span className='rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 px-2 py-0.5 text-[10px] font-bold'>
-                Save 20%
+                {t.savePercent}
               </span>
             </button>
           </div>
@@ -50,7 +53,7 @@ export function PricingSection() {
 
         {/* Pricing Grid */}
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch'>
-          {PRICING_PLANS.map((plan, idx) => {
+          {t.plans.map((plan, idx) => {
             const price = billingCycle === 'annual' ? plan.annualPrice : plan.monthlyPrice
             return (
               <div
@@ -63,7 +66,7 @@ export function PricingSection() {
               >
                 {plan.highlight && (
                   <div className='absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 px-4 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-lg'>
-                    Most Popular Plan
+                    Most Popular
                   </div>
                 )}
 
@@ -76,7 +79,7 @@ export function PricingSection() {
                   <div className='border-y border-slate-200 dark:border-white/10 py-4 space-y-1'>
                     <div className='flex items-baseline gap-1'>
                       <span className='text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white'>${price}</span>
-                      <span className='text-xs text-slate-500 dark:text-slate-400 font-medium'>/ month per branch</span>
+                      <span className='text-xs text-slate-500 dark:text-slate-400 font-medium'>{t.perMonthBranch}</span>
                     </div>
                     <div className='text-xs text-violet-600 dark:text-violet-400 font-semibold'>
                       {plan.studentsLimit} • {plan.branchesLimit}
@@ -84,7 +87,7 @@ export function PricingSection() {
                   </div>
 
                   <div className='space-y-3'>
-                    <div className='text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300'>Included Features:</div>
+                    <div className='text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300'>{t.includedFeaturesTitle}</div>
                     {plan.features.map((feat, i) => (
                       <div key={i} className='flex items-start gap-2.5 text-xs text-slate-700 dark:text-slate-300'>
                         <CheckCircle2 className='h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5' />

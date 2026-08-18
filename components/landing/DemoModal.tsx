@@ -5,7 +5,8 @@ import { Sparkles, CheckCircle2, ArrowRight } from 'lucide-react'
 import { Modal } from '@/components/ui/Modal'
 import { Dropdown } from '@/components/ui/Dropdown'
 import { useDemoModal } from '@/context/DemoModalContext'
-import { STUDENT_COUNT_OPTIONS } from '@/data/landing-data'
+import { useLanguage } from '@/context/LanguageContext'
+import { TRANSLATIONS } from '@/data/translations'
 
 export function DemoModal() {
   const {
@@ -19,6 +20,9 @@ export function DemoModal() {
     handleDemoSubmit,
   } = useDemoModal()
 
+  const { language } = useLanguage()
+  const t = TRANSLATIONS[language].demoModal
+
   return (
     <Modal
       isOpen={isDemoModalOpen}
@@ -28,16 +32,16 @@ export function DemoModal() {
         demoSubmitted ? null : (
           <div className='space-y-1.5'>
             <div className='inline-flex items-center gap-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 px-3 py-1 text-[11px] font-semibold text-violet-700 dark:text-violet-300'>
-              <Sparkles className='h-3 w-3 text-amber-500 dark:text-amber-300' /> Personalized 1-on-1 Walkthrough
+              <Sparkles className='h-3 w-3 text-amber-500 dark:text-amber-300' /> {t.personalizedWalkthrough}
             </div>
-            <h3 className='text-2xl font-bold text-slate-900 dark:text-white'>Book a Live Demo for Your Center</h3>
+            <h3 className='text-2xl font-bold text-slate-900 dark:text-white'>{t.title}</h3>
           </div>
         )
       }
       description={
         demoSubmitted
           ? null
-          : 'See how EduSphere fits your learning center’s exact workflow & branch structure.'
+          : t.subtitle
       }
     >
       {demoSubmitted ? (
@@ -45,9 +49,9 @@ export function DemoModal() {
           <div className='h-16 w-16 bg-emerald-500/20 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto shadow-lg shadow-emerald-500/20'>
             <CheckCircle2 className='h-8 w-8' />
           </div>
-          <h3 className='text-2xl font-bold text-slate-900 dark:text-white'>Demo Request Confirmed!</h3>
+          <h3 className='text-2xl font-bold text-slate-900 dark:text-white'>{t.confirmedTitle}</h3>
           <p className='text-xs text-slate-600 dark:text-slate-300 leading-relaxed max-w-sm mx-auto'>
-            Thank you, <span className='text-slate-900 dark:text-white font-semibold'>{demoForm.name || 'valued partner'}</span>! Our education systems specialist will reach out to you via WhatsApp / Phone within 15 minutes to schedule your walkthrough.
+            {t.confirmedMessage}
           </p>
         </div>
       ) : (
@@ -64,7 +68,7 @@ export function DemoModal() {
               }`}
             >
               <span className='h-4 w-4 rounded-full bg-white/20 flex items-center justify-center text-[10px]'>1</span>
-              <span>Contact Info</span>
+              <span>{t.stepContact}</span>
             </button>
             <span className='text-slate-400 dark:text-slate-600'>/</span>
             <button
@@ -81,18 +85,18 @@ export function DemoModal() {
               }`}
             >
               <span className='h-4 w-4 rounded-full bg-white/20 flex items-center justify-center text-[10px]'>2</span>
-              <span>Center Scale</span>
+              <span>{t.stepScale}</span>
             </button>
           </div>
 
           {demoStep === 1 ? (
             <div className='space-y-4 animate-in fade-in duration-200'>
               <div>
-                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Your Full Name</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>{t.fullNameLabel}</label>
                 <input
                   type='text'
                   required
-                  placeholder='e.g., Akmal Umarov'
+                  placeholder={t.fullNamePlaceholder}
                   value={demoForm.name}
                   onChange={(e) => setDemoForm({ ...demoForm, name: e.target.value })}
                   className='w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
@@ -100,11 +104,11 @@ export function DemoModal() {
               </div>
 
               <div>
-                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Phone / WhatsApp Number</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>{t.phoneLabel}</label>
                 <input
                   type='tel'
                   required
-                  placeholder='+998 90 123 45 67'
+                  placeholder={t.phonePlaceholder}
                   value={demoForm.phone}
                   onChange={(e) => setDemoForm({ ...demoForm, phone: e.target.value })}
                   className='w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
@@ -112,11 +116,11 @@ export function DemoModal() {
               </div>
 
               <div>
-                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Learning Center Name</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>{t.centerNameLabel}</label>
                 <input
                   type='text'
                   required
-                  placeholder='e.g., Cambridge Education Hub'
+                  placeholder={t.centerNamePlaceholder}
                   value={demoForm.centerName}
                   onChange={(e) => setDemoForm({ ...demoForm, centerName: e.target.value })}
                   className='w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
@@ -133,25 +137,25 @@ export function DemoModal() {
                 disabled={!demoForm.name || !demoForm.phone || !demoForm.centerName}
                 className='w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 py-3 text-xs font-bold text-white shadow-lg shadow-violet-600/30 hover:opacity-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer'
               >
-                <span>Next: Select Student Capacity</span>
+                <span>{t.nextCapacityBtn}</span>
                 <ArrowRight className='h-4 w-4' />
               </button>
             </div>
           ) : (
             <div className='space-y-4 animate-in fade-in duration-200'>
               <Dropdown<string>
-                label='Number of Active Students'
-                options={STUDENT_COUNT_OPTIONS}
+                label={t.studentsDropdownLabel}
+                options={t.studentsOptions}
                 value={demoForm.studentsCount}
                 onChange={(val) => setDemoForm({ ...demoForm, studentsCount: val })}
                 searchable={true}
-                searchPlaceholder='Filter student capacity...'
+                searchPlaceholder={t.studentsSearchPlaceholder}
               />
 
               <div>
-                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Preferred Time for Demo Call</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>{t.preferredTimeLabel}</label>
                 <div className='grid grid-cols-2 gap-2 text-xs'>
-                  {['Morning (9:00 - 12:00)', 'Afternoon (12:00 - 17:00)', 'Evening (17:00 - 20:00)', 'Anytime Today'].map((time) => (
+                  {t.timeOptions.map((time) => (
                     <button
                       key={time}
                       type='button'
@@ -174,14 +178,14 @@ export function DemoModal() {
                   onClick={() => setDemoStep(1)}
                   className='w-1/3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100 dark:bg-white/5 py-3 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors cursor-pointer'
                 >
-                  Back
+                  {t.backBtn}
                 </button>
 
                 <button
                   type='submit'
                   className='w-2/3 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 py-3 text-xs font-bold text-white shadow-lg shadow-violet-600/30 hover:opacity-95 transition-all cursor-pointer'
                 >
-                  Confirm &amp; Book Demo
+                  {t.confirmBtn}
                 </button>
               </div>
             </div>
