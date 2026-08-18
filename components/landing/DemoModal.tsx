@@ -27,10 +27,10 @@ export function DemoModal() {
       title={
         demoSubmitted ? null : (
           <div className='space-y-1.5'>
-            <div className='inline-flex items-center gap-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 px-3 py-1 text-[11px] font-semibold text-violet-300'>
-              <Sparkles className='h-3 w-3 text-amber-300' /> Personalized 1-on-1 Walkthrough
+            <div className='inline-flex items-center gap-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 px-3 py-1 text-[11px] font-semibold text-violet-700 dark:text-violet-300'>
+              <Sparkles className='h-3 w-3 text-amber-500 dark:text-amber-300' /> Personalized 1-on-1 Walkthrough
             </div>
-            <h3 className='text-2xl font-bold text-white'>Book a Live Demo for Your Center</h3>
+            <h3 className='text-2xl font-bold text-slate-900 dark:text-white'>Book a Live Demo for Your Center</h3>
           </div>
         )
       }
@@ -42,31 +42,31 @@ export function DemoModal() {
     >
       {demoSubmitted ? (
         <div className='py-8 text-center space-y-4 animate-in zoom-in-95 duration-200'>
-          <div className='h-16 w-16 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 rounded-full flex items-center justify-center mx-auto shadow-lg shadow-emerald-500/20'>
+          <div className='h-16 w-16 bg-emerald-500/20 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto shadow-lg shadow-emerald-500/20'>
             <CheckCircle2 className='h-8 w-8' />
           </div>
-          <h3 className='text-2xl font-bold text-white'>Demo Request Confirmed!</h3>
-          <p className='text-xs text-slate-300 leading-relaxed max-w-sm mx-auto'>
-            Thank you, <span className='text-white font-semibold'>{demoForm.name || 'valued partner'}</span>! Our education systems specialist will reach out to you via WhatsApp / Phone within 15 minutes to schedule your walkthrough.
+          <h3 className='text-2xl font-bold text-slate-900 dark:text-white'>Demo Request Confirmed!</h3>
+          <p className='text-xs text-slate-600 dark:text-slate-300 leading-relaxed max-w-sm mx-auto'>
+            Thank you, <span className='text-slate-900 dark:text-white font-semibold'>{demoForm.name || 'valued partner'}</span>! Our education systems specialist will reach out to you via WhatsApp / Phone within 15 minutes to schedule your walkthrough.
           </p>
         </div>
       ) : (
         <form onSubmit={handleDemoSubmit} className='space-y-4'>
           {/* Step Indicator */}
-          <div className='flex items-center gap-2 pb-2 border-b border-white/10 text-xs font-semibold'>
+          <div className='flex items-center gap-2 pb-2 border-b border-slate-200 dark:border-white/10 text-xs font-semibold'>
             <button
               type='button'
               onClick={() => setDemoStep(1)}
               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors cursor-pointer ${
                 demoStep === 1
                   ? 'bg-violet-600 text-white'
-                  : 'text-slate-400 hover:text-white bg-white/5'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-white/5'
               }`}
             >
               <span className='h-4 w-4 rounded-full bg-white/20 flex items-center justify-center text-[10px]'>1</span>
               <span>Contact Info</span>
             </button>
-            <span className='text-slate-600'>/</span>
+            <span className='text-slate-400 dark:text-slate-600'>/</span>
             <button
               type='button'
               onClick={() => {
@@ -77,7 +77,7 @@ export function DemoModal() {
               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors cursor-pointer ${
                 demoStep === 2
                   ? 'bg-violet-600 text-white'
-                  : 'text-slate-400 hover:text-white bg-white/5'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-white/5'
               }`}
             >
               <span className='h-4 w-4 rounded-full bg-white/20 flex items-center justify-center text-[10px]'>2</span>
@@ -88,38 +88,38 @@ export function DemoModal() {
           {demoStep === 1 ? (
             <div className='space-y-4 animate-in fade-in duration-200'>
               <div>
-                <label className='block text-xs font-semibold text-slate-300 mb-1.5'>Your Full Name</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Your Full Name</label>
                 <input
                   type='text'
                   required
                   placeholder='e.g., Akmal Umarov'
                   value={demoForm.name}
                   onChange={(e) => setDemoForm({ ...demoForm, name: e.target.value })}
-                  className='w-full rounded-xl border border-white/10 bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
+                  className='w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
                 />
               </div>
 
               <div>
-                <label className='block text-xs font-semibold text-slate-300 mb-1.5'>Phone / WhatsApp Number</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Phone / WhatsApp Number</label>
                 <input
                   type='tel'
                   required
                   placeholder='+998 90 123 45 67'
                   value={demoForm.phone}
                   onChange={(e) => setDemoForm({ ...demoForm, phone: e.target.value })}
-                  className='w-full rounded-xl border border-white/10 bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
+                  className='w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
                 />
               </div>
 
               <div>
-                <label className='block text-xs font-semibold text-slate-300 mb-1.5'>Learning Center Name</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Learning Center Name</label>
                 <input
                   type='text'
                   required
                   placeholder='e.g., Cambridge Education Hub'
                   value={demoForm.centerName}
                   onChange={(e) => setDemoForm({ ...demoForm, centerName: e.target.value })}
-                  className='w-full rounded-xl border border-white/10 bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
+                  className='w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] px-4 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/30'
                 />
               </div>
 
@@ -149,7 +149,7 @@ export function DemoModal() {
               />
 
               <div>
-                <label className='block text-xs font-semibold text-slate-300 mb-1.5'>Preferred Time for Demo Call</label>
+                <label className='block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5'>Preferred Time for Demo Call</label>
                 <div className='grid grid-cols-2 gap-2 text-xs'>
                   {['Morning (9:00 - 12:00)', 'Afternoon (12:00 - 17:00)', 'Evening (17:00 - 20:00)', 'Anytime Today'].map((time) => (
                     <button
@@ -158,8 +158,8 @@ export function DemoModal() {
                       onClick={() => setDemoForm({ ...demoForm, preferredTime: time })}
                       className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer ${
                         demoForm.preferredTime === time
-                          ? 'border-violet-500 bg-violet-600/30 text-white font-medium'
-                          : 'border-white/10 bg-[#121428] text-slate-400 hover:text-white'
+                          ? 'border-violet-500 bg-violet-600/15 dark:bg-violet-600/30 text-violet-900 dark:text-white font-medium'
+                          : 'border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#121428] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                       }`}
                     >
                       {time}
@@ -172,7 +172,7 @@ export function DemoModal() {
                 <button
                   type='button'
                   onClick={() => setDemoStep(1)}
-                  className='w-1/3 rounded-xl border border-white/10 bg-white/5 py-3 text-xs font-bold text-slate-300 hover:bg-white/10 transition-colors cursor-pointer'
+                  className='w-1/3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100 dark:bg-white/5 py-3 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors cursor-pointer'
                 >
                   Back
                 </button>

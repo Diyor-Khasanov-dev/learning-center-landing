@@ -65,20 +65,20 @@ export function Modal({
   return (
     <div
       onClick={handleBackdropClick}
-      className='fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200 overflow-y-auto'
+      className='fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 dark:bg-black/80 backdrop-blur-md animate-in fade-in duration-200 overflow-y-auto'
       role='dialog'
       aria-modal='true'
     >
       <div
         ref={modalRef}
-        className={`relative w-full ${maxWidthClasses[maxWidth]} rounded-3xl border border-white/15 bg-[#101226] p-6 sm:p-8 shadow-2xl shadow-violet-950/50 space-y-6 my-8 animate-in zoom-in-95 duration-200 border-white/20`}
+        className={`relative w-full ${maxWidthClasses[maxWidth]} rounded-3xl border border-slate-200 dark:border-white/15 bg-white dark:bg-[#101226] p-6 sm:p-8 shadow-2xl shadow-violet-950/20 dark:shadow-violet-950/50 space-y-6 my-8 animate-in zoom-in-95 duration-200 border-slate-200 dark:border-white/20`}
       >
         {/* Close Button */}
         {showCloseButton && (
           <button
             onClick={onClose}
             aria-label='Close modal'
-            className='absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-xl bg-white/5 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500'
+            className='absolute top-5 right-5 text-slate-400 hover:text-slate-900 dark:hover:text-white p-2 rounded-xl bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 cursor-pointer'
           >
             <X className='h-5 w-5' />
           </button>
@@ -88,12 +88,12 @@ export function Modal({
         {(title || description) && (
           <div className='space-y-2 pr-8'>
             {title && (
-              <div className='text-xl sm:text-2xl font-bold text-white tracking-tight'>
+              <div className='text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight'>
                 {title}
               </div>
             )}
             {description && (
-              <div className='text-xs sm:text-sm text-slate-400 leading-relaxed'>
+              <div className='text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed'>
                 {description}
               </div>
             )}
@@ -104,7 +104,7 @@ export function Modal({
         <div className='relative'>{children}</div>
 
         {/* Modal Footer */}
-        {footer && <div className='pt-4 border-t border-white/10'>{footer}</div>}
+        {footer && <div className='pt-4 border-t border-slate-200 dark:border-white/10'>{footer}</div>}
       </div>
     </div>
   )
