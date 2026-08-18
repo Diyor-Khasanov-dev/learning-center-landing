@@ -4,14 +4,17 @@ import React, { useState } from 'react'
 import { Sparkles, CheckCircle2, ArrowRight } from 'lucide-react'
 import { Dropdown } from '@/components/ui/Dropdown'
 import { RoleFilter } from '@/types/landing'
-import { FEATURE_MODULES, ROLE_FILTER_OPTIONS } from '@/data/landing-data'
 import { useDemoModal } from '@/context/DemoModalContext'
+import { useLanguage } from '@/context/LanguageContext'
+import { TRANSLATIONS } from '@/data/translations'
 
 export function FeatureModulesSection() {
   const [roleFilter, setRoleFilter] = useState<RoleFilter>('all')
   const { openDemoModal } = useDemoModal()
+  const { language } = useLanguage()
+  const t = TRANSLATIONS[language].features
 
-  const filteredModules = FEATURE_MODULES.filter(
+  const filteredModules = t.modules.filter(
     (m) => roleFilter === 'all' || m.role === roleFilter
   )
 
@@ -22,23 +25,23 @@ export function FeatureModulesSection() {
           <div className='space-y-3 max-w-2xl'>
             <div className='inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold text-violet-700 dark:text-violet-300'>
               <Sparkles className='h-3.5 w-3.5 text-amber-500 dark:text-amber-300' />
-              <span>Complete Functionality</span>
+              <span>{t.badge}</span>
             </div>
             <h2 className='text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white'>
-              Everything you need to scale your learning center
+              {t.heading}
             </h2>
             <p className='text-slate-600 dark:text-slate-400 text-base'>
-              Tailored views and tools for Administrators, Sales Managers, Teachers, Students, and Parents.
+              {t.subheading}
             </p>
           </div>
 
           {/* Role Filter Dropdown */}
           <div className='w-full sm:w-72 shrink-0'>
             <Dropdown<RoleFilter>
-              options={ROLE_FILTER_OPTIONS}
+              options={t.roleFilterOptions}
               value={roleFilter}
               onChange={(val) => setRoleFilter(val)}
-              label='Filter Modules by Role'
+              label={t.filterLabel}
               size='md'
             />
           </div>
@@ -86,7 +89,7 @@ export function FeatureModulesSection() {
                   onClick={openDemoModal}
                   className='mt-6 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs font-semibold text-violet-600 dark:text-violet-400 group-hover:text-violet-700 dark:group-hover:text-violet-300 cursor-pointer'
                 >
-                  <span>Request live demo of this module</span>
+                  <span>{t.requestDemo}</span>
                   <ArrowRight className='h-4 w-4 group-hover:translate-x-1 transition-transform' />
                 </div>
               </div>

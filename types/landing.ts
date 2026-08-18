@@ -1,5 +1,4 @@
 import React from 'react'
-import { DropdownOption } from '@/components/ui/Dropdown'
 
 export type RoleFilter = 'all' | 'admin' | 'teacher' | 'student' | 'sales'
 

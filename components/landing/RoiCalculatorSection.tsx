@@ -3,11 +3,15 @@
 import React, { useState } from 'react'
 import { Calculator, Clock, UserCheck } from 'lucide-react'
 import { useDemoModal } from '@/context/DemoModalContext'
+import { useLanguage } from '@/context/LanguageContext'
+import { TRANSLATIONS } from '@/data/translations'
 
 export function RoiCalculatorSection() {
   const [studentCount, setStudentCount] = useState<number>(300)
   const [branchCount, setBranchCount] = useState<number>(2)
   const { openDemoModal } = useDemoModal()
+  const { language } = useLanguage()
+  const t = TRANSLATIONS[language].roi
 
   // ROI Calculations
   const hoursSavedPerWeek = Math.round((studentCount / 20) * branchCount)
@@ -22,22 +26,22 @@ export function RoiCalculatorSection() {
           <div className='lg:col-span-6 space-y-6'>
             <div className='inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-xs font-semibold text-amber-700 dark:text-amber-300'>
               <Calculator className='h-4 w-4 text-amber-600 dark:text-amber-400' />
-              <span>Interactive Savings Estimator</span>
+              <span>{t.badge}</span>
             </div>
 
             <h2 className='text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white'>
-              Calculate how much time &amp; money EduSphere will save you
+              {t.heading}
             </h2>
 
             <p className='text-slate-600 dark:text-slate-400 text-sm leading-relaxed'>
-              Adjust your center’s numbers to see estimated weekly hours saved on manual admin work, uncollected tuition recovered, and recovered leads.
+              {t.subheading}
             </p>
 
             {/* Slider 1: Student Count */}
             <div className='space-y-2 bg-white dark:bg-[#101225] p-5 rounded-2xl border border-slate-200/80 dark:border-white/10 shadow-xs dark:shadow-none'>
               <div className='flex justify-between items-center text-sm font-semibold'>
-                <span className='text-slate-700 dark:text-slate-300'>Total Active Students</span>
-                <span className='text-violet-600 dark:text-violet-400 text-lg font-bold'>{studentCount} Students</span>
+                <span className='text-slate-700 dark:text-slate-300'>{t.slider1Label}</span>
+                <span className='text-violet-600 dark:text-violet-400 text-lg font-bold'>{studentCount} {t.slider1Unit}</span>
               </div>
               <input
                 type='range'
@@ -59,8 +63,8 @@ export function RoiCalculatorSection() {
             {/* Slider 2: Branch Count */}
             <div className='space-y-2 bg-white dark:bg-[#101225] p-5 rounded-2xl border border-slate-200/80 dark:border-white/10 shadow-xs dark:shadow-none'>
               <div className='flex justify-between items-center text-sm font-semibold'>
-                <span className='text-slate-700 dark:text-slate-300'>Number of Branches</span>
-                <span className='text-cyan-600 dark:text-cyan-400 text-lg font-bold'>{branchCount} Branches</span>
+                <span className='text-slate-700 dark:text-slate-300'>{t.slider2Label}</span>
+                <span className='text-cyan-600 dark:text-cyan-400 text-lg font-bold'>{branchCount} {t.slider2Unit}</span>
               </div>
               <input
                 type='range'
@@ -72,9 +76,9 @@ export function RoiCalculatorSection() {
                 className='w-full accent-cyan-600 dark:accent-cyan-500 cursor-pointer h-2 bg-slate-200 dark:bg-slate-800 rounded-lg'
               />
               <div className='flex justify-between text-[10px] text-slate-500 font-mono'>
-                <span>1 Single Branch</span>
-                <span>5 Branches</span>
-                <span>15+ Franchise</span>
+                <span>1</span>
+                <span>5</span>
+                <span>15+</span>
               </div>
             </div>
           </div>
@@ -87,28 +91,28 @@ export function RoiCalculatorSection() {
               </div>
 
               <div className='border-b border-white/10 pb-4'>
-                <div className='text-xs font-semibold uppercase tracking-wider text-violet-300'>Estimated Monthly ROI</div>
+                <div className='text-xs font-semibold uppercase tracking-wider text-violet-300'>{t.roiTitle}</div>
                 <div className='text-3xl sm:text-5xl font-extrabold text-white mt-2'>
                   ${estimatedMoneySavedMonthly.toLocaleString()}{' '}
-                  <span className='text-sm font-normal text-slate-300 dark:text-slate-400'>/ month saved</span>
+                  <span className='text-sm font-normal text-slate-300 dark:text-slate-400'>{t.perMonthSaved}</span>
                 </div>
               </div>
 
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                 <div className='bg-white/10 dark:bg-white/[0.03] p-4 rounded-xl border border-white/10 space-y-1'>
                   <div className='flex items-center gap-2 text-xs text-slate-200 dark:text-slate-400 font-medium'>
-                    <Clock className='h-4 w-4 text-cyan-300 dark:text-cyan-400' /> Admin Time Saved
+                    <Clock className='h-4 w-4 text-cyan-300 dark:text-cyan-400' /> {t.timeSavedLabel}
                   </div>
-                  <div className='text-2xl font-bold text-white'>{hoursSavedPerWeek} Hours</div>
-                  <div className='text-[11px] text-slate-300 dark:text-slate-400'>Per week in manual work</div>
+                  <div className='text-2xl font-bold text-white'>{hoursSavedPerWeek} h</div>
+                  <div className='text-[11px] text-slate-300 dark:text-slate-400'>{t.timeSavedSub}</div>
                 </div>
 
                 <div className='bg-white/10 dark:bg-white/[0.03] p-4 rounded-xl border border-white/10 space-y-1'>
                   <div className='flex items-center gap-2 text-xs text-slate-200 dark:text-slate-400 font-medium'>
-                    <UserCheck className='h-4 w-4 text-emerald-300 dark:text-emerald-400' /> Recovered Leads
+                    <UserCheck className='h-4 w-4 text-emerald-300 dark:text-emerald-400' /> {t.leadsRecoveredLabel}
                   </div>
-                  <div className='text-2xl font-bold text-white'>+{lostLeadsRecovered} Students</div>
-                  <div className='text-[11px] text-slate-300 dark:text-slate-400'>Via CRM follow-ups</div>
+                  <div className='text-2xl font-bold text-white'>+{lostLeadsRecovered}</div>
+                  <div className='text-[11px] text-slate-300 dark:text-slate-400'>{t.leadsRecoveredSub}</div>
                 </div>
               </div>
 
@@ -117,10 +121,10 @@ export function RoiCalculatorSection() {
                   onClick={openDemoModal}
                   className='w-full rounded-2xl bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 dark:from-violet-600 dark:via-indigo-600 dark:to-cyan-500 py-4 text-center font-bold text-white shadow-xl shadow-violet-600/30 hover:opacity-95 transition-all cursor-pointer'
                 >
-                  Start Saving Now — Request Custom Audit
+                  {t.auditBtn}
                 </button>
                 <p className='text-center text-[11px] text-slate-300 dark:text-slate-400 mt-3'>
-                  Based on real customer benchmarks across 350+ learning centers.
+                  {t.benchmarkNote}
                 </p>
               </div>
             </div>
