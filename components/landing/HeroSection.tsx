@@ -173,7 +173,7 @@ export function HeroSection() {
               {/* Floating Badge */}
               <div className='absolute -bottom-5 -left-5 hidden sm:flex items-center gap-3 rounded-2xl border border-white/15 bg-[#14172c] p-3.5 shadow-2xl backdrop-blur-xl'>
                 <div className='flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'>
-                  <Bell className='h-5 w-5 animate-bounce' />
+                  <Bell className='h-5 w-5' />
                 </div>
                 <div>
                   <div className='text-xs font-bold text-white'>Automated Parent SMS</div>
