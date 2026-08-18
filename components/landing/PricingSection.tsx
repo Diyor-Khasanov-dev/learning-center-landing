@@ -1,0 +1,116 @@
+'use client'
+
+import React, { useState } from 'react'
+import { DollarSign, CheckCircle2 } from 'lucide-react'
+import { PRICING_PLANS } from '@/data/landing-data'
+import { useDemoModal } from '@/context/DemoModalContext'
+
+export function PricingSection() {
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('annual')
+  const { openDemoModal } = useDemoModal()
+
+  return (
+    <section id='pricing' className='py-24 bg-[#0a0c1a]/90 border-y border-white/10 relative'>
+      <div className='mx-auto max-w-7xl px-6'>
+        <div className='text-center max-w-3xl mx-auto mb-12 space-y-4'>
+          <div className='inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold text-emerald-300'>
+            <DollarSign className='h-4 w-4 text-emerald-400' />
+            <span>Transparent Pricing</span>
+          </div>
+          <h2 className='text-3xl sm:text-4xl font-bold tracking-tight'>
+            Simple plans for centers of all sizes
+          </h2>
+          <p className='text-slate-400 text-base'>
+            No hidden setup fees. Upgrade or adjust your branch plan anytime as you grow.
+          </p>
+
+          {/* Monthly / Annual Toggle */}
+          <div className='px-2 inline-flex items-center gap-3 bg-[#121428] p-1.5 rounded-full border border-white/10'>
+            <button
+              onClick={() => setBillingCycle('monthly')}
+              className={`rounded-full px-5 py-2 text-xs font-semibold transition-all cursor-pointer ${
+                billingCycle === 'monthly' ? 'bg-violet-600 text-white' : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              Monthly Billing
+            </button>
+            <button
+              onClick={() => setBillingCycle('annual')}
+              className={`rounded-full px-5 py-2 text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
+                billingCycle === 'annual' ? 'bg-violet-600 text-white' : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <span>Annual Billing</span>
+              <span className='rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 text-[10px] font-bold'>
+                Save 20%
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* Pricing Grid */}
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch'>
+          {PRICING_PLANS.map((plan, idx) => {
+            const price = billingCycle === 'annual' ? plan.annualPrice : plan.monthlyPrice
+            return (
+              <div
+                key={idx}
+                className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all ${
+                  plan.highlight
+                    ? 'border-2 border-violet-500 bg-gradient-to-b from-[#151733] to-[#0e1022] shadow-2xl shadow-violet-600/20 scale-105'
+                    : 'border border-white/10 bg-[#0e1022] hover:border-white/20'
+                }`}
+              >
+                {plan.highlight && (
+                  <div className='absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 px-4 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-lg'>
+                    Most Popular Plan
+                  </div>
+                )}
+
+                <div className='space-y-6'>
+                  <div>
+                    <h3 className='text-2xl font-bold text-white'>{plan.name}</h3>
+                    <p className='text-xs text-slate-400 mt-2 leading-relaxed'>{plan.desc}</p>
+                  </div>
+
+                  <div className='border-y border-white/10 py-4 space-y-1'>
+                    <div className='flex items-baseline gap-1'>
+                      <span className='text-4xl sm:text-5xl font-extrabold text-white'>${price}</span>
+                      <span className='text-xs text-slate-400 font-medium'>/ month per branch</span>
+                    </div>
+                    <div className='text-xs text-violet-400 font-semibold'>
+                      {plan.studentsLimit} • {plan.branchesLimit}
+                    </div>
+                  </div>
+
+                  <div className='space-y-3'>
+                    <div className='text-xs font-bold uppercase tracking-wider text-slate-300'>Included Features:</div>
+                    {plan.features.map((feat, i) => (
+                      <div key={i} className='flex items-start gap-2.5 text-xs text-slate-300'>
+                        <CheckCircle2 className='h-4 w-4 text-emerald-400 shrink-0 mt-0.5' />
+                        <span>{feat}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className='mt-8 pt-6 border-t border-white/10'>
+                  <button
+                    onClick={openDemoModal}
+                    className={`w-full rounded-2xl py-3.5 text-center text-sm font-bold transition-all cursor-pointer ${
+                      plan.highlight
+                        ? 'bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 text-white shadow-lg shadow-violet-600/30 hover:opacity-95'
+                        : 'bg-white/10 border border-white/10 text-white hover:bg-white/20'
+                    }`}
+                  >
+                    {plan.cta}
+                  </button>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}
