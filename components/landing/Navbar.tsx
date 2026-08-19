@@ -19,7 +19,7 @@ export function Navbar() {
       {/* Top glowing ambient highlight line */}
       <div className='h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500/70 via-indigo-500/70 to-transparent' />
 
-      <nav className='mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 py-3.5'>
+      <nav className='mx-auto flex max-w-[1400px] items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-10 py-3.5'>
         {/* Brand Logo */}
         <a href='#' className='flex items-center gap-2.5 group shrink-0'>
           <div className='flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-500 to-cyan-400 shadow-lg shadow-violet-500/25 dark:shadow-violet-500/30 group-hover:scale-105 group-hover:shadow-violet-500/40 transition-all duration-300'>
@@ -29,56 +29,60 @@ export function Navbar() {
             <span className='text-lg font-bold tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 dark:from-white dark:via-slate-100 dark:to-slate-300 bg-clip-text text-transparent whitespace-nowrap'>
               EduSphere
             </span>
-            <span className='hidden xl:inline-block rounded-full bg-violet-500/10 dark:bg-violet-500/20 px-2 py-0.5 text-[10px] font-bold text-violet-700 dark:text-violet-300 border border-violet-500/20 dark:border-violet-500/30 whitespace-nowrap'>
+            <span className='hidden 2xl:inline-block rounded-full bg-violet-500/10 dark:bg-violet-500/20 px-2.5 py-0.5 text-[10px] font-bold text-violet-700 dark:text-violet-300 border border-violet-500/20 dark:border-violet-500/30 whitespace-nowrap'>
               ERP &amp; CRM
             </span>
           </div>
         </a>
 
         {/* Desktop Nav Links */}
-        <div className='hidden lg:flex items-center gap-1.5 xl:gap-5 text-xs xl:text-sm font-semibold text-slate-600 dark:text-slate-300'>
+        <div className='hidden lg:flex items-center gap-2 lg:gap-3 xl:gap-6 2xl:gap-8 text-xs xl:text-sm font-medium xl:font-semibold text-slate-600 dark:text-slate-300'>
           <a
             href='#comparison'
-            className='px-3 py-1.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-violet-500/10 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.whyUs}
           </a>
           <a
             href='#features'
-            className='px-3 py-1.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-violet-500/10 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.modules}
           </a>
           <a
             href='#tour'
-            className='px-3 py-1.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-violet-500/10 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.tour}
           </a>
           <a
             href='#roi'
-            className='px-3 py-1.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-violet-500/10 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.roi}
           </a>
           <a
             href='#pricing'
-            className='px-3 py-1.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-violet-500/10 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.pricing}
           </a>
           <a
             href='#faq'
-            className='px-3 py-1.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-violet-500/10 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.faq}
           </a>
         </div>
 
         {/* Desktop CTAs, Language Selector & Theme Toggle */}
-        <div className='hidden lg:flex items-center gap-2.5 xl:gap-3 shrink-0'>
-          <LanguageSelector />
-          <ThemeToggle />
+        <div className='hidden lg:flex items-center gap-3 xl:gap-4 shrink-0'>
+          <div className='flex items-center gap-2 xl:gap-2.5'>
+            <LanguageSelector />
+            <ThemeToggle />
+          </div>
+
+          <div className='h-4 w-[1px] bg-slate-200 dark:bg-white/15 mx-0.5' />
 
           <button
             onClick={openDemoModal}

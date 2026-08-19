@@ -211,14 +211,14 @@ export interface LanguageTranslationBundle {
 export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
   uz: {
     nav: {
-      whyUs: 'Nega EduSphere',
+      whyUs: 'Nega biz',
       modules: 'Modullar',
-      tour: 'Platforma tur',
-      roi: 'ROI Kalkulyator',
+      tour: 'Platforma',
+      roi: 'ROI',
       pricing: 'Narxlar',
       faq: 'KOP',
       login: 'Kirish',
-      bookDemo: 'Bepul demo buyurtma qilish',
+      bookDemo: 'Bepul demo',
     },
     hero: {
       badge: "Yangi avlod ta'lim markazini boshqarish platformasi",
@@ -641,14 +641,14 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
   },
   ru: {
     nav: {
-      whyUs: 'Почему EduSphere',
+      whyUs: 'Почему мы',
       modules: 'Модули',
-      tour: 'Обзор платформы',
-      roi: 'Калькулятор ROI',
+      tour: 'Обзор',
+      roi: 'ROI',
       pricing: 'Цены',
       faq: 'FAQ',
       login: 'Войти',
-      bookDemo: 'Заказать бесплатное демо',
+      bookDemo: 'Бесплатное демо',
     },
     hero: {
       badge: 'Платформа управления обучением нового поколения',
@@ -1071,14 +1071,14 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
   },
   en: {
     nav: {
-      whyUs: 'Why EduSphere',
+      whyUs: 'Why Us',
       modules: 'Modules',
-      tour: 'Platform Tour',
-      roi: 'ROI Calculator',
+      tour: 'Tour',
+      roi: 'ROI',
       pricing: 'Pricing',
       faq: 'FAQ',
       login: 'Log In',
-      bookDemo: 'Book Free Demo',
+      bookDemo: 'Free Demo',
     },
     hero: {
       badge: 'Next-Gen Education Management Platform',
