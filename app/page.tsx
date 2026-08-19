@@ -14,8 +14,87 @@ import { Footer } from '@/components/landing/Footer'
 import { DemoModal } from '@/components/landing/DemoModal'
 
 export default function Home() {
+  const jsonLdSoftwareApp = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'EduSphere',
+    operatingSystem: 'All (Web, iOS, Android)',
+    applicationCategory: 'EducationalApplication',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      ratingCount: '350',
+    },
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: '39',
+      highPrice: '199',
+      offerCount: '3',
+    },
+    description:
+      "O'quv markazlari, til akademiyalari va IT maktablar uchun #1 ERP va CRM boshqaruv tizimi. CRM для учебных центров, языковых школ и IT академий.",
+    url: 'https://edusphere.app',
+  }
+
+  const jsonLdOrganization = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'EduSphere',
+    url: 'https://edusphere.app',
+    logo: 'https://edusphere.app/favicon.ico',
+    description: 'Yangi avlod ta\'lim markazini boshqarish platformasi. All-in-one ERP & CRM for learning centers.',
+    sameAs: [
+      'https://t.me/edusphere',
+      'https://instagram.com/edusphere_app',
+    ],
+  }
+
+  const jsonLdFaq = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: "Ma'lumotlarni Excel yoki boshqa tizimdan ko'chirish qancha vaqt oladi?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Ma'lumotlarni ko'chirish 30 daqiqadan kamroq vaqt oladi! Tayyor Excel shablonlari orqali barcha o'quvchilar va guruhlarni bepul ko'chirish mumkin.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "Ota-onalar to'lovlarni tizim orqali onlayn amalga oshirishlari mumkinmi?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Ha, EduSphere Payme, Click va bank kartalari bilan integratsiyalashgan. Ota-onalar SMS orqali to'lov havolasini oladilar.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'QR kodli davomat tizimi qanday ishlaydi?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Har bir o'quvchi unikal QR kod oladi. Resepshn yoki o'qituvchi skanerlaganda ota-onaga avtomatik SMS boradi.",
+        },
+      },
+    ],
+  }
+
   return (
     <DemoModalProvider>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftwareApp) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
       <div className='min-h-screen bg-slate-50 dark:bg-[#07080e] text-slate-800 dark:text-slate-100 font-sans selection:bg-violet-500 selection:text-white relative overflow-x-hidden transition-colors duration-200'>
         <Navbar />
         <main>

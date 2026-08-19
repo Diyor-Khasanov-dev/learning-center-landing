@@ -60,7 +60,7 @@ export function TestimonialsSection() {
                 <div className='flex items-center gap-3.5'>
                   <Image
                     src={testimonial.image}
-                    alt={testimonial.author}
+                    alt={`${testimonial.author} — ${testimonial.role}, ${testimonial.company}`}
                     width={48}
                     height={48}
                     className='h-12 w-12 rounded-full object-cover border-2 border-amber-500/30 shadow-xs'
