@@ -209,12 +209,21 @@ export function HeroSection() {
               </div>
 
               {/* Floating Notification Badge */}
-              <div className='absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3.5 rounded-2xl border border-slate-200 dark:border-white/20 bg-white/95 dark:bg-[#14172c]/95 p-4 shadow-2xl backdrop-blur-2xl animate-bounce-slow'>
-                <div className='flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shrink-0'>
-                  <Bell className='h-5 w-5' />
+              <div className='absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3.5 rounded-2xl border border-slate-200/90 dark:border-white/20 bg-white/95 dark:bg-[#14172c]/95 p-4 shadow-2xl backdrop-blur-2xl transition-transform hover:scale-105 duration-300'>
+                <div className='relative flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shrink-0 animate-pulse-ring'>
+                  <Bell className='h-5 w-5 animate-bell-ring' />
+                  <span className='absolute -top-1 -right-1 flex h-3 w-3'>
+                    <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75' />
+                    <span className='relative inline-flex rounded-full h-3 w-3 bg-rose-500 border border-white dark:border-[#14172c]' />
+                  </span>
                 </div>
                 <div>
-                  <div className='text-xs font-bold text-slate-900 dark:text-white'>{t.smsBadgeTitle}</div>
+                  <div className='text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5'>
+                    <span>{t.smsBadgeTitle}</span>
+                    <span className='text-[9px] bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 px-1.5 py-0.5 rounded-full font-extrabold uppercase tracking-wide'>
+                      Live
+                    </span>
+                  </div>
                   <div className='text-[11px] text-slate-600 dark:text-slate-300 font-medium'>{t.smsBadgeSub}</div>
                 </div>
               </div>

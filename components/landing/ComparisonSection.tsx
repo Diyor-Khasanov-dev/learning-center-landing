@@ -33,13 +33,13 @@ export function ComparisonSection() {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch'>
 
           {/* The Old Way */}
-          <div className='rounded-3xl border border-rose-500/30 bg-rose-500/5 dark:bg-rose-950/15 p-6 sm:p-8 space-y-6 relative overflow-hidden backdrop-blur-xl shadow-xl transition-all duration-300 hover:border-rose-500/40'>
+          <div className='rounded-3xl border border-rose-500/30 bg-rose-500/5 dark:bg-rose-950/20 p-6 sm:p-8 space-y-6 relative overflow-hidden backdrop-blur-2xl shadow-xl transition-all duration-300 hover:border-rose-500/50 hover:shadow-2xl'>
             {/* Ambient Red Glow */}
-            <div className='pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-rose-500/20 blur-3xl' />
+            <div className='pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-rose-500/25 blur-3xl' />
 
             <div className='flex flex-wrap items-center justify-between border-b border-rose-500/20 pb-4 gap-2'>
               <h3 className='text-xl font-extrabold text-rose-800 dark:text-rose-300 flex items-center gap-2.5'>
-                <div className='flex h-9 w-9 items-center justify-center rounded-xl bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/30'>
+                <div className='flex h-10 w-10 items-center justify-center rounded-xl bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/30 shadow-xs'>
                   <XCircle className='h-5 w-5' />
                 </div>
                 <span>{t.oldWayTitle}</span>
@@ -51,11 +51,11 @@ export function ComparisonSection() {
 
             <div className='space-y-3.5'>
               {t.items.map((item, idx) => (
-                <div key={idx} className='flex items-start gap-3.5 p-4 rounded-2xl bg-white/60 dark:bg-rose-950/20 border border-rose-500/15 shadow-2xs hover:border-rose-500/30 transition-all'>
+                <div key={idx} className='flex items-start gap-3.5 p-4 rounded-2xl bg-white/80 dark:bg-rose-950/30 border border-rose-500/20 shadow-xs hover:border-rose-500/40 hover:scale-[1.01] transition-all'>
                   <XCircle className='h-5 w-5 text-rose-500 dark:text-rose-400 shrink-0 mt-0.5' />
                   <div>
-                    <div className='text-sm font-bold text-rose-900 dark:text-rose-200'>{item.category}</div>
-                    <div className='text-xs text-slate-600 dark:text-slate-300 mt-1 leading-relaxed font-normal'>{item.oldWay}</div>
+                    <div className='text-sm font-bold text-rose-950 dark:text-rose-200'>{item.category}</div>
+                    <div className='text-xs text-slate-700 dark:text-slate-300 mt-1 leading-relaxed font-medium'>{item.oldWay}</div>
                   </div>
                 </div>
               ))}
@@ -63,30 +63,30 @@ export function ComparisonSection() {
           </div>
 
           {/* The EduSphere Way */}
-          <div className='rounded-3xl border border-emerald-500/40 bg-emerald-500/10 dark:bg-emerald-950/20 p-6 sm:p-8 space-y-6 relative overflow-hidden backdrop-blur-xl shadow-2xl shadow-emerald-950/15 transition-all duration-300 hover:border-emerald-500/60 hover:shadow-emerald-500/10'>
+          <div className='rounded-3xl border border-emerald-500/45 bg-emerald-500/10 dark:bg-emerald-950/25 p-6 sm:p-8 space-y-6 relative overflow-hidden backdrop-blur-2xl shadow-2xl shadow-emerald-950/20 transition-all duration-300 hover:border-emerald-500/70 hover:shadow-emerald-500/15 hover:scale-[1.01]'>
             {/* Ambient Green Glow */}
-            <div className='pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-emerald-500/25 blur-3xl' />
+            <div className='pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-emerald-500/30 blur-3xl' />
 
-            <div className='flex flex-wrap items-center justify-between border-b border-emerald-500/25 pb-4 gap-2'>
+            <div className='flex flex-wrap items-center justify-between border-b border-emerald-500/30 pb-4 gap-2'>
               <h3 className='text-xl font-extrabold text-emerald-900 dark:text-emerald-300 flex items-center gap-2.5'>
-                <div className='flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/25 text-emerald-600 dark:text-emerald-400 border border-emerald-500/40 shadow-xs'>
+                <div className='flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/25 text-emerald-600 dark:text-emerald-400 border border-emerald-500/40 shadow-xs'>
                   <CheckCircle2 className='h-5 w-5' />
                 </div>
                 <span>{t.newWayTitle}</span>
               </h3>
               <span className='text-xs font-bold bg-emerald-500/20 text-emerald-900 dark:text-emerald-300 px-3.5 py-1.5 rounded-full border border-emerald-500/40 shadow-2xs flex items-center gap-1.5'>
-                <Sparkles className='h-3 w-3 text-amber-500 dark:text-amber-400' />
+                <Sparkles className='h-3.5 w-3.5 text-amber-500 dark:text-amber-400 fill-amber-500' />
                 <span>{t.newWayTag}</span>
               </span>
             </div>
 
             <div className='space-y-3.5'>
               {t.items.map((item, idx) => (
-                <div key={idx} className='flex items-start gap-3.5 p-4 rounded-2xl bg-white/80 dark:bg-emerald-950/30 border border-emerald-500/25 shadow-2xs hover:border-emerald-500/40 transition-all'>
+                <div key={idx} className='flex items-start gap-3.5 p-4 rounded-2xl bg-white/90 dark:bg-emerald-950/40 border border-emerald-500/30 shadow-xs hover:border-emerald-500/50 hover:scale-[1.01] transition-all'>
                   <CheckCircle2 className='h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5' />
                   <div>
                     <div className='text-sm font-bold text-emerald-950 dark:text-emerald-200'>{item.category}</div>
-                    <div className='text-xs text-slate-700 dark:text-slate-200 mt-1 leading-relaxed font-normal'>{item.newWay}</div>
+                    <div className='text-xs text-slate-800 dark:text-slate-200 mt-1 leading-relaxed font-medium'>{item.newWay}</div>
                   </div>
                 </div>
               ))}
