@@ -35,7 +35,6 @@ export function LanguageSelector() {
         aria-label='Select language'
       >
         <Globe className='h-3.5 w-3.5 text-violet-600 dark:text-violet-400 shrink-0' />
-        <span className='mr-0.5 text-xs shrink-0'>{currentOption.flag}</span>
         <span className='uppercase font-bold tracking-wider text-[11px] shrink-0'>{currentOption.code}</span>
         <ChevronDown className={`h-3 w-3 text-slate-400 transition-transform duration-200 shrink-0 ${isOpen ? 'rotate-180 text-violet-600 dark:text-violet-400' : ''}`} />
       </button>
@@ -55,10 +54,7 @@ export function LanguageSelector() {
                     : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5'
                 }`}
               >
-                <div className='flex items-center gap-2 shrink-0'>
-                  <span className='text-sm'>{option.flag}</span>
-                  <span>{option.label}</span>
-                </div>
+                <span>{option.label}</span>
                 <span className='text-[10px] uppercase text-slate-400 font-mono font-semibold shrink-0'>{option.code}</span>
               </button>
             )

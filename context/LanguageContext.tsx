@@ -7,13 +7,12 @@ export type Language = 'uz' | 'ru' | 'en'
 export interface LanguageOption {
   code: Language
   label: string
-  flag: string
 }
 
 export const LANGUAGE_OPTIONS: LanguageOption[] = [
-  { code: 'uz', label: "O'zbekcha", flag: '🇺🇿' },
-  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'uz', label: "O'zbekcha" },
+  { code: 'ru', label: 'Русский' },
+  { code: 'en', label: 'English' },
 ]
 
 interface LanguageContextType {

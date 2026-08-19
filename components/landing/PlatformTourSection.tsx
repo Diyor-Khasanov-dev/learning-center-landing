@@ -165,11 +165,15 @@ export function PlatformTourSection() {
                     </span>
                   </div>
 
-                  <div className='bg-violet-950/30 border border-violet-500/25 p-3.5 rounded-xl text-xs space-y-2'>
-                    <div className='font-bold text-violet-300 flex items-center gap-1.5'>
-                      <Bell className='h-3.5 w-3.5 text-violet-400' /> Automated Parent SMS Dispatch
+                  <div className='bg-violet-950/40 border border-violet-500/30 p-3.5 rounded-xl text-xs space-y-2 shadow-lg'>
+                    <div className='font-bold text-violet-300 flex items-center gap-2'>
+                      <div className='relative flex items-center justify-center'>
+                        <Bell className='h-4 w-4 text-violet-400 animate-bell-ring' />
+                        <span className='absolute -top-1 -right-1 flex h-2 w-2 rounded-full bg-rose-500' />
+                      </div>
+                      <span>Automated Parent SMS Dispatch</span>
                     </div>
-                    <div className='text-slate-300 text-[11px] bg-black/50 p-2.5 rounded-lg border border-white/5 font-mono'>
+                    <div className='text-slate-200 text-[11px] bg-black/60 p-2.5 rounded-lg border border-white/10 font-mono'>
                       “Dear parent, Kamila checked in at Bright Academy branch #1 at 14:02.”
                     </div>
                   </div>

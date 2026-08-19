@@ -52,3 +52,58 @@ select:focus-visible {
 .dark select:focus-visible {
   outline: 2px solid #a78bfa;
 }
+
+/* Realistic Bell Ringing Animation */
+@keyframes bellRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(16deg);
+  }
+  20% {
+    transform: rotate(-14deg);
+  }
+  30% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.animate-bell-ring {
+  transform-origin: top center;
+  animation: bellRing 2.2s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulseRing 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
