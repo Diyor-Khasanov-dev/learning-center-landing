@@ -12,7 +12,7 @@ export function HeroSection() {
   const t = TRANSLATIONS[language].hero
 
   return (
-    <section className='relative pt-12 pb-24 md:pt-20 md:pb-36 overflow-hidden'>
+    <section className='relative pt-28 pb-24 md:pt-36 md:pb-36 overflow-hidden'>
       {/* Background Ambient Glows */}
       <div className='pointer-events-none absolute -top-40 right-1/4 h-[600px] w-[600px] rounded-full bg-violet-500/15 dark:bg-violet-600/20 blur-[150px]' />
       <div className='pointer-events-none absolute top-1/4 left-0 h-[500px] w-[500px] rounded-full bg-indigo-500/15 dark:bg-indigo-600/20 blur-[140px]' />

@@ -6,6 +6,7 @@ import { ComparisonSection } from '@/components/landing/ComparisonSection'
 import { FeatureModulesSection } from '@/components/landing/FeatureModulesSection'
 import { PlatformTourSection } from '@/components/landing/PlatformTourSection'
 import { RoiCalculatorSection } from '@/components/landing/RoiCalculatorSection'
+import { TeamSection } from '@/components/landing/TeamSection'
 import { TestimonialsSection } from '@/components/landing/TestimonialsSection'
 import { PricingSection } from '@/components/landing/PricingSection'
 import { FaqSection } from '@/components/landing/FaqSection'
@@ -103,6 +104,7 @@ export default function Home() {
           <ComparisonSection />
           <FeatureModulesSection />
           <PlatformTourSection />
+          <TeamSection />
           <RoiCalculatorSection />
           <TestimonialsSection />
           <PricingSection />
