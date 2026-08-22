@@ -15,7 +15,7 @@ export function Navbar() {
   const t = TRANSLATIONS[language].nav
 
   return (
-    <header className='sticky top-0 z-50 border-b border-slate-200/80 dark:border-white/10 bg-white/85 dark:bg-[#07080e]/85 backdrop-blur-3xl transition-colors duration-200'>
+    <header className='fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 dark:border-white/10 bg-white/85 dark:bg-[#07080e]/85 backdrop-blur-3xl transition-colors duration-200'>
       {/* Top glowing ambient highlight line */}
       <div className='h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500/70 via-indigo-500/70 to-transparent' />
 
@@ -54,6 +54,12 @@ export function Navbar() {
             className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
           >
             {t.tour}
+          </a>
+          <a
+            href='#team'
+            className='px-3 py-1.5 xl:px-3.5 rounded-full hover:text-violet-600 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/10 transition-all whitespace-nowrap'
+          >
+            {t.team}
           </a>
           <a
             href='#roi'
@@ -138,6 +144,13 @@ export function Navbar() {
             className='block px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5 rounded-xl transition-colors'
           >
             {t.tour}
+          </a>
+          <a
+            href='#team'
+            onClick={() => setMobileMenuOpen(false)}
+            className='block px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5 rounded-xl transition-colors'
+          >
+            {t.team}
           </a>
           <a
             href='#roi'

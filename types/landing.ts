@@ -66,6 +66,16 @@ export interface FaqItem {
   a: string
 }
 
+export interface TeamMember {
+  id: string
+  name: string
+  role: string
+  image: string
+  github: string
+  linkedin: string
+  bio?: string
+}
+
 export interface DemoForm {
   name: string
   phone: string

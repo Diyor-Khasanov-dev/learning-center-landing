@@ -9,6 +9,7 @@ import {
   Testimonial,
   PricingPlan,
   FaqItem,
+  TeamMember,
 } from '@/types/landing'
 import {
   GraduationCap,
@@ -26,11 +27,19 @@ export interface NavTranslations {
   whyUs: string
   modules: string
   tour: string
+  team: string
   roi: string
   pricing: string
   faq: string
   login: string
   bookDemo: string
+}
+
+export interface TeamTranslations {
+  badge: string
+  heading: string
+  subheading: string
+  members: TeamMember[]
 }
 
 export interface HeroTranslations {
@@ -199,6 +208,7 @@ export interface LanguageTranslationBundle {
   comparison: ComparisonTranslations
   features: FeatureModulesTranslations
   tour: TourTranslations
+  team: TeamTranslations
   roi: RoiTranslations
   testimonials: TestimonialsTranslations
   pricing: PricingTranslations
@@ -214,11 +224,64 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       whyUs: 'Nega biz',
       modules: 'Modullar',
       tour: 'Platforma',
+      team: 'Jamoa',
       roi: 'ROI',
       pricing: 'Narxlar',
       faq: 'KOP',
       login: 'Kirish',
       bookDemo: 'Bepul demo',
+    },
+    team: {
+      badge: "Kompaniya asoschilari",
+      heading: "A.L.I.A ortida turgan jamoa",
+      subheading: "Ta'lim sohasini avtomatlashtirish va innovatsiyalarni joriy etishga bel bog'lagan mutaxassislarimiz bilan tanishing.",
+      members: [
+        {
+          id: '1',
+          name: 'Azizbek Rahimov',
+          role: 'Co-Founder & CEO',
+          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/azizbek-rahimov',
+          linkedin: 'https://linkedin.com/in/azizbek-rahimov',
+          bio: 'EdTech sohasida 7 yillik tajribaga ega strateg va tadbirkor.',
+        },
+        {
+          id: '2',
+          name: 'Sardorbek Karimov',
+          role: 'Co-Founder & CTO',
+          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/sardorbek-karimov',
+          linkedin: 'https://linkedin.com/in/sardorbek-karimov',
+          bio: 'Yuqori yuklamali bulutli tizimlar va ma’lumotlar xavfsizligi arxitektori.',
+        },
+        {
+          id: '3',
+          name: 'Madina Aliyeva',
+          role: 'Head of Product & UX',
+          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/madina-aliyeva',
+          linkedin: 'https://linkedin.com/in/madina-aliyeva',
+          bio: 'Qulay va intuitiv foydalanuvchi interfeyslari bo‘yicha ekspert.',
+        },
+        {
+          id: '4',
+          name: 'Jasur Mirzayev',
+          role: 'Lead Full-Stack Engineer',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/jasur-mirzayev',
+          linkedin: 'https://linkedin.com/in/jasur-mirzayev',
+          bio: 'React, Next.js va mikroservislar bo‘yicha bosh dasturchi.',
+        },
+        {
+          id: '5',
+          name: 'Nilufar Umarova',
+          role: 'Head of Customer Success',
+          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/nilufar-umarova',
+          linkedin: 'https://linkedin.com/in/nilufar-umarova',
+          bio: 'Ta’lim markazlarini onboarding qilish va qo‘llab-quvvatlash yetakchisi.',
+        },
+      ],
     },
     hero: {
       badge: "Yangi avlod ta'lim markazini boshqarish platformasi",
@@ -644,11 +707,64 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       whyUs: 'Почему мы',
       modules: 'Модули',
       tour: 'Обзор',
+      team: 'Команда',
       roi: 'ROI',
       pricing: 'Цены',
       faq: 'FAQ',
       login: 'Войти',
       bookDemo: 'Бесплатное демо',
+    },
+    team: {
+      badge: "Основатели компании",
+      heading: "Команда, стоящая за A.L.I.A",
+      subheading: "Познакомьтесь с экспертами, которые создают инновации и автоматизируют процессы для образовательных центров.",
+      members: [
+        {
+          id: '1',
+          name: 'Азизбек Рахимов',
+          role: 'Co-Founder & CEO',
+          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/azizbek-rahimov',
+          linkedin: 'https://linkedin.com/in/azizbek-rahimov',
+          bio: 'Предприниматель и стратег с 7-летним опытом в сфере EdTech.',
+        },
+        {
+          id: '2',
+          name: 'Сардорбек Каримов',
+          role: 'Co-Founder & CTO',
+          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/sardorbek-karimov',
+          linkedin: 'https://linkedin.com/in/sardorbek-karimov',
+          bio: 'Архитектор высоконагруженных облачных систем и безопасности данных.',
+        },
+        {
+          id: '3',
+          name: 'Мадина Алиева',
+          role: 'Head of Product & UX',
+          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/madina-aliyeva',
+          linkedin: 'https://linkedin.com/in/madina-aliyeva',
+          bio: 'Эксперт по продуктовому дизайну и интуитивным пользовательским интерфейсам.',
+        },
+        {
+          id: '4',
+          name: 'Джасур Мирзаев',
+          role: 'Lead Full-Stack Engineer',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/jasur-mirzayev',
+          linkedin: 'https://linkedin.com/in/jasur-mirzayev',
+          bio: 'Ведущий разработчик React, Next.js и микросервисной архитектуры.',
+        },
+        {
+          id: '5',
+          name: 'Нилуфар Умарова',
+          role: 'Head of Customer Success',
+          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/nilufar-umarova',
+          linkedin: 'https://linkedin.com/in/nilufar-umarova',
+          bio: 'Руководитель направления онбординга и заботы о клиентах.',
+        },
+      ],
     },
     hero: {
       badge: 'Платформа управления обучением нового поколения',
@@ -1074,11 +1190,64 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       whyUs: 'Why Us',
       modules: 'Modules',
       tour: 'Tour',
+      team: 'Team',
       roi: 'ROI',
       pricing: 'Pricing',
       faq: 'FAQ',
       login: 'Log In',
       bookDemo: 'Free Demo',
+    },
+    team: {
+      badge: "Startup Founders & Leadership",
+      heading: "Meet the Team Behind A.L.I.A",
+      subheading: "Passionate innovators, engineers, and education leaders building the future of learning center operations.",
+      members: [
+        {
+          id: '1',
+          name: 'Azizbek Rahimov',
+          role: 'Co-Founder & CEO',
+          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/azizbek-rahimov',
+          linkedin: 'https://linkedin.com/in/azizbek-rahimov',
+          bio: 'EdTech strategist and entrepreneur with 7+ years scaling software solutions.',
+        },
+        {
+          id: '2',
+          name: 'Sardorbek Karimov',
+          role: 'Co-Founder & CTO',
+          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/sardorbek-karimov',
+          linkedin: 'https://linkedin.com/in/sardorbek-karimov',
+          bio: 'Cloud systems architect specializing in high-throughput enterprise security.',
+        },
+        {
+          id: '3',
+          name: 'Madina Aliyeva',
+          role: 'Head of Product & UX',
+          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/madina-aliyeva',
+          linkedin: 'https://linkedin.com/in/madina-aliyeva',
+          bio: 'Product designer obsessed with crafting effortless workflows for educators.',
+        },
+        {
+          id: '4',
+          name: 'Jasur Mirzayev',
+          role: 'Lead Full-Stack Engineer',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/jasur-mirzayev',
+          linkedin: 'https://linkedin.com/in/jasur-mirzayev',
+          bio: 'Full-stack engineering wizard specialized in React, Next.js & real-time APIs.',
+        },
+        {
+          id: '5',
+          name: 'Nilufar Umarova',
+          role: 'Head of Customer Success',
+          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/nilufar-umarova',
+          linkedin: 'https://linkedin.com/in/nilufar-umarova',
+          bio: 'Dedicated leader ensuring seamless customer onboarding and 24/7 success.',
+        },
+      ],
     },
     hero: {
       badge: 'Next-Gen Education Management Platform',
