@@ -121,12 +121,7 @@ export function TeamSection() {
                           {member.role}
                         </div>
 
-                        {/* Bio */}
-                        {member.bio && (
-                          <p className='text-xs sm:text-sm text-slate-600 dark:text-slate-300/90 leading-relaxed font-normal line-clamp-3 mb-4'>
-                            {member.bio}
-                          </p>
-                        )}
+                        
                       </div>
 
                       {/* Social Links: GitHub & LinkedIn */}
