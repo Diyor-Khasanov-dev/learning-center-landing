@@ -24,7 +24,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 function getInitialLanguage(): Language {
   if (typeof window === 'undefined') return 'uz'
-  const storedLang = (localStorage.getItem('alia-lang') || localStorage.getItem('edusphere-lang')) as Language | null
+  const storedLang = localStorage.getItem('alia-lang') as Language | null
   if (storedLang === 'uz' || storedLang === 'ru' || storedLang === 'en') {
     return storedLang
   }

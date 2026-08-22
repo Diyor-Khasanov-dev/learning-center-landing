@@ -14,7 +14,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') return 'dark'
-  const storedTheme = (localStorage.getItem('alia-theme') || localStorage.getItem('edusphere-theme')) as Theme | null
+  const storedTheme = localStorage.getItem('alia-theme') as Theme | null
   if (storedTheme === 'light' || storedTheme === 'dark') {
     return storedTheme
   }

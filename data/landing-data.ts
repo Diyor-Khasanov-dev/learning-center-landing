@@ -185,7 +185,7 @@ export const TOUR_TABS: TourTab[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      'Modme-style system transformed our learning center completely. Before, we lost 30% of incoming leads because managers forgot to call back. Now everything is tracked, and our monthly revenue grew by 45% in 6 months.',
+      'A.L.I.A system transformed our learning center completely. Before, we lost 30% of incoming leads because managers forgot to call back. Now everything is tracked, and our monthly revenue grew by 45% in 6 months.',
     author: 'Jane Smith',
     role: 'Founder & CEO',
     company: 'Apex Education Center (4 Branches)',
