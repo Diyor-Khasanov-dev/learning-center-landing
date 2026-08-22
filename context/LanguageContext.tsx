@@ -24,7 +24,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 function getInitialLanguage(): Language {
   if (typeof window === 'undefined') return 'uz'
-  const storedLang = localStorage.getItem('edusphere-lang') as Language | null
+  const storedLang = (localStorage.getItem('alia-lang') || localStorage.getItem('edusphere-lang')) as Language | null
   if (storedLang === 'uz' || storedLang === 'ru' || storedLang === 'en') {
     return storedLang
   }
@@ -35,7 +35,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<Language>(getInitialLanguage)
 
   useEffect(() => {
-    localStorage.setItem('edusphere-lang', language)
+    localStorage.setItem('alia-lang', language)
     document.documentElement.lang = language
   }, [language])
 

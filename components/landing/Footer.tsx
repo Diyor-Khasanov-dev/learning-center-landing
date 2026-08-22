@@ -21,7 +21,7 @@ export function Footer() {
             <div className='flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-400 text-white font-bold'>
               <GraduationCap className='h-5 w-5' />
             </div>
-            <span className='text-xl font-bold text-slate-900 dark:text-white tracking-tight'>EduSphere</span>
+            <span className='text-xl font-bold text-slate-900 dark:text-white tracking-tight'>A.L.I.A</span>
           </div>
 
           <p className='text-xs text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm'>
@@ -70,7 +70,7 @@ export function Footer() {
       </div>
 
       <div className='mx-auto max-w-7xl px-6 pt-12 mt-12 border-t border-slate-200 dark:border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-500 gap-4'>
-        <div>© {new Date().getFullYear()} EduSphere Inc. {t.allRightsReserved}</div>
+        <div>© {new Date().getFullYear()} A.L.I.A Inc. {t.allRightsReserved}</div>
         <div className='flex gap-6'>
           <a href='#' className='hover:text-slate-900 dark:hover:text-slate-300'>{t.privacy}</a>
           <a href='#' className='hover:text-slate-900 dark:hover:text-slate-300'>{t.terms}</a>

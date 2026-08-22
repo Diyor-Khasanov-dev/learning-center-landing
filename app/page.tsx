@@ -17,7 +17,7 @@ export default function Home() {
   const jsonLdSoftwareApp = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'EduSphere',
+    name: 'A.L.I.A - Academic Lead & Intelligence Assistant',
     operatingSystem: 'All (Web, iOS, Android)',
     applicationCategory: 'EducationalApplication',
     aggregateRating: {
@@ -34,19 +34,19 @@ export default function Home() {
     },
     description:
       "O'quv markazlari, til akademiyalari va IT maktablar uchun #1 ERP va CRM boshqaruv tizimi. CRM для учебных центров, языковых школ и IT академий.",
-    url: 'https://edusphere.app',
+    url: 'https://alia.app',
   }
 
   const jsonLdOrganization = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'EduSphere',
-    url: 'https://edusphere.app',
-    logo: 'https://edusphere.app/favicon.ico',
+    name: 'A.L.I.A',
+    url: 'https://alia.app',
+    logo: 'https://alia.app/favicon.ico',
     description: 'Yangi avlod ta\'lim markazini boshqarish platformasi. All-in-one ERP & CRM for learning centers.',
     sameAs: [
-      'https://t.me/edusphere',
-      'https://instagram.com/edusphere_app',
+      'https://t.me/alia_app',
+      'https://instagram.com/alia_app',
     ],
   }
 
@@ -67,7 +67,7 @@ export default function Home() {
         name: "Ota-onalar to'lovlarni tizim orqali onlayn amalga oshirishlari mumkinmi?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Ha, EduSphere Payme, Click va bank kartalari bilan integratsiyalashgan. Ota-onalar SMS orqali to'lov havolasini oladilar.",
+          text: "Ha, A.L.I.A Payme, Click va bank kartalari bilan integratsiyalashgan. Ota-onalar SMS orqali to'lov havolasini oladilar.",
         },
       },
       {

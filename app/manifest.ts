@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "EduSphere — O'quv Markazlarini Boshqarish Tizimi",
-    short_name: 'EduSphere',
+    name: "A.L.I.A - Academic Lead & Intelligence Assistant",
+    short_name: 'A.L.I.A',
     description: "O'quv markazlari, til akademiyalari va IT maktablar uchun ERP va CRM platformasi.",
     start_url: '/',
     display: 'standalone',
