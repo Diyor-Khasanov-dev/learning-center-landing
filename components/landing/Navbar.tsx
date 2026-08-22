@@ -27,7 +27,7 @@ export function Navbar() {
           </div>
           <div className='flex items-center gap-2'>
             <span className='text-lg font-bold tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 dark:from-white dark:via-slate-100 dark:to-slate-300 bg-clip-text text-transparent whitespace-nowrap'>
-              EduSphere
+              A.L.I.A
             </span>
             <span className='hidden 2xl:inline-block rounded-full bg-violet-500/10 dark:bg-violet-500/20 px-2.5 py-0.5 text-[10px] font-bold text-violet-700 dark:text-violet-300 border border-violet-500/20 dark:border-violet-500/30 whitespace-nowrap'>
               ERP &amp; CRM

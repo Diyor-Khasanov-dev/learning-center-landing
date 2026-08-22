@@ -62,7 +62,7 @@ export function ComparisonSection() {
             </div>
           </div>
 
-          {/* The EduSphere Way */}
+          {/* The A.L.I.A Way */}
           <div className='rounded-3xl border border-emerald-500/45 bg-emerald-500/10 dark:bg-emerald-950/25 p-6 sm:p-8 space-y-6 relative overflow-hidden backdrop-blur-2xl shadow-2xl shadow-emerald-950/20 transition-all duration-300 hover:border-emerald-500/70 hover:shadow-emerald-500/15 hover:scale-[1.01]'>
             {/* Ambient Green Glow */}
             <div className='pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-emerald-500/30 blur-3xl' />

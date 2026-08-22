@@ -205,7 +205,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      'Managing 6 branches used to be a nightmare with Excel. With EduSphere, I can see real-time student count, cash flow, teacher attendance, and sales performance from my smartphone anywhere in the world.',
+      'Managing 6 branches used to be a nightmare with Excel. With A.L.I.A, I can see real-time student count, cash flow, teacher attendance, and sales performance from my smartphone anywhere in the world.',
     author: 'John Doe',
     role: 'General Director',
     company: 'ProTech IT Academy',
@@ -283,11 +283,11 @@ export const FAQS: FaqItem[] = [
   },
   {
     q: 'Can parents pay tuition online through the system?',
-    a: 'Yes! EduSphere integrates with popular online payment gateways (Payme, Click, Stripe, PayPal, local bank cards). Parents receive a direct payment link in SMS or inside their Parent Portal.',
+    a: 'Yes! A.L.I.A integrates with popular online payment gateways (Payme, Click, Stripe, PayPal, local bank cards). Parents receive a direct payment link in SMS or inside their Parent Portal.',
   },
   {
-    q: 'Does EduSphere support multiple branches and franchises?',
-    a: 'Absolutely. EduSphere was engineered specifically for multi-branch learning centers. Branch managers see only their branch data, while central directors and owners have a unified global dashboard.',
+    q: 'Does A.L.I.A support multiple branches and franchises?',
+    a: 'Absolutely. A.L.I.A was engineered specifically for multi-branch learning centers. Branch managers see only their branch data, while central directors and owners have a unified global dashboard.',
   },
   {
     q: 'How does the QR Code attendance system work?',
@@ -298,7 +298,7 @@ export const FAQS: FaqItem[] = [
     a: 'Security is our top priority. We use SSL encryption in transit, daily database backups, strict role-based access control (RBAC), and SOC2 compliant cloud server infrastructure.',
   },
   {
-    q: 'Can I try EduSphere before purchasing?',
+    q: 'Can I try A.L.I.A before purchasing?',
     a: 'Yes, we offer a 14-day full feature free trial with no credit card required. You can also book a live 1-on-1 demo with our product expert.',
   },
 ]

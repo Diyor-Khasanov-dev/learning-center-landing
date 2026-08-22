@@ -231,7 +231,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       trustTrial: '14 kunlik bepul sinov',
       trustSetup: "15 daqiqada tezkor sozlash",
       trustMigration: "Bepul ma'lumotlarni ko'chirish",
-      dashboardTitle: 'edusphere.app/admin/dashboard',
+      dashboardTitle: 'alia.app/admin/dashboard',
       liveSystem: 'Jonli tizim',
       activeStudents: 'Faol o‘quvchilar',
       thisMonth: '↑ +12.4% bu oy',
@@ -266,7 +266,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       subheading: "Qog'ozlar va tarqoq ilovalar orqali boshqarish to'lanmagan qarzdorliklarga, yo'qolgan lidlarga va adminlarning toliqishiga olib keladi.",
       oldWayTitle: 'Eski usul (Excel, Qog‘ozlar va Chatlar)',
       oldWayTag: 'Yuqori xavf va yo‘qotish',
-      newWayTitle: 'EduSphere yechimi',
+      newWayTitle: 'A.L.I.A yechimi',
       newWayTag: '100% Avtomatlashtirilgan',
       items: [
         {
@@ -380,7 +380,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     tour: {
       badge: 'Interaktiv ish jarayoni',
       heading: 'Platformaning ichki imkoniyatlari bilan tanishing',
-      subheading: 'EduSphere markazingiz boshqaruvini qanchalik soddalashtirishini his qilish uchun bo‘limlarni bosing.',
+      subheading: 'A.L.I.A markazingiz boshqaruvini qanchalik soddalashtirishini his qilish uchun bo‘limlarni bosing.',
       seeDemoBtn: 'Jonli demoga yozilish',
       liveInterface: 'Jonli interfeys',
       synced: '100% Sinxronlangan',
@@ -433,7 +433,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     roi: {
       badge: 'Teqjamkorlik Kalkulyatori',
-      heading: 'EduSphere qancha vaqt va mablag‘ingizni tejashini hisoblang',
+      heading: 'A.L.I.A qancha vaqt va mablag‘ingizni tejashini hisoblang',
       subheading: 'Markazingiz ko‘rsatkichlarini tanlang va har haftalik tejaladigan admin vaqtini hamda qaytarilgan mablag‘larni ko‘ring.',
       slider1Label: 'Faol o‘quvchilar soni',
       slider2Label: 'Filiallar soni',
@@ -451,11 +451,11 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     testimonials: {
       badge: 'Isbotlangan natijalar',
       heading: "Ta'lim markazi rahbarlari va asoschilari e'tirofi",
-      subheading: 'Yetakchilar EduSphere yordamida jarayonlarni va daromadni qanday oshirganini bilib oling.',
+      subheading: 'Yetakchilar A.L.I.A yordamida jarayonlarni va daromadni qanday oshirganini bilib oling.',
       testimonials: [
         {
           quote:
-            'EduSphere tizimi markazimizni butunlay o‘zgartirdi. Ilgari menejerlar esdan chiqargani uchun 30% lidlarni yo‘qotardik. Hozir barchasi nazoratda, daromadimiz 6 oyda 45% ga oshdi.',
+            'A.L.I.A tizimi markazimizni butunlay o‘zgartirdi. Ilgari menejerlar esdan chiqargani uchun 30% lidlarni yo‘qotardik. Hozir barchasi nazoratda, daromadimiz 6 oyda 45% ga oshdi.',
           author: 'Jasur Shokirov',
           role: 'Asoschi va CEO',
           company: 'Apex Education Center (4 filial)',
@@ -473,7 +473,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           quote:
-            '6 ta filialni Excelda boshqarish haqiqiy kabus edi. EduSphere bilan smartfonimdan real vaqt rejimida barcha filiallar moliya va o‘quvchi sonini ko‘rib turaman.',
+            '6 ta filialni Excelda boshqarish haqiqiy kabus edi. A.L.I.A bilan smartfonimdan real vaqt rejimida barcha filiallar moliya va o‘quvchi sonini ko‘rib turaman.',
           author: 'Alisher Qodirov',
           role: 'Bosh Direktor',
           company: 'ProTech IT Academy',
@@ -555,7 +555,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     faq: {
       badge: 'Savollaringiz bormi?',
       heading: 'Ko‘p beriladigan savollar',
-      subheading: 'EduSphere tizimini markazingizga joriy etish haqida barcha javoblar.',
+      subheading: 'A.L.I.A tizimini markazingizga joriy etish haqida barcha javoblar.',
       faqs: [
         {
           q: "Ma'lumotlarni Excel yoki boshqa tizimdan ko'chirish qancha vaqt oladi?",
@@ -563,11 +563,11 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           q: "Ota-onalar to'lovlarni tizim orqali onlayn amalga oshirishlari mumkinmi?",
-          a: "Ha! EduSphere ommabop to'lov tizimlari (Payme, Click va bank kartalari) bilan integratsiyalashgan. Ota-onalar SMS yoki shaxsiy kabinet orqali to'lov havolasini oladilar.",
+          a: "Ha! A.L.I.A ommabop to'lov tizimlari (Payme, Click va bank kartalari) bilan integratsiyalashgan. Ota-onalar SMS yoki shaxsiy kabinet orqali to'lov havolasini oladilar.",
         },
         {
-          q: 'EduSphere bir nechta filial va franchayzalarni qo‘llab-quvvatlaydimi?',
-          a: 'Albatta. EduSphere maxsus ko‘p filialli ta’lim markazlari uchun mo‘ljallangan. Filial menejerlari faqat o‘z filialini ko‘radi, rahbarlar esa umumiy tahlilni ko‘radi.',
+          q: 'A.L.I.A bir nechta filial va franchayzalarni qo‘llab-quvvatlaydimi?',
+          a: 'Albatta. A.L.I.A maxsus ko‘p filialli ta’lim markazlari uchun mo‘ljallangan. Filial menejerlari faqat o‘z filialini ko‘radi, rahbarlar esa umumiy tahlilni ko‘radi.',
         },
         {
           q: 'QR kodli davomat tizimi qanday ishlaydi?',
@@ -578,7 +578,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           a: "Xavfsizlik bizning eng ustuvor vazifamizdir. Biz SSL shifrlash, har kunlik zaxira nusxalash va SOC2 standartlariga mos keladigan bulutli serverlardan foydalanamiz.",
         },
         {
-          q: 'EduSphere-ni xarid qilishdan oldin sinab ko‘rish mumkinmi?',
+          q: 'A.L.I.A-ni xarid qilishdan oldin sinab ko‘rish mumkinmi?',
           a: 'Ha, biz kartasiz 14 kunlik to‘liq bepul sinov muddatini taqdim etamiz. Shuningdek, mutaxassisimiz bilan 1-ga-1 demo uchrashuv belgilashingiz mumkin.',
         },
       ],
@@ -613,7 +613,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     demoModal: {
       personalizedWalkthrough: 'Shaxsiy 1-ga-1 tushuntirish',
       title: 'Markazingiz uchun jonli demo buyurtma qiling',
-      subtitle: 'EduSphere markazingiz ish jarayoniga va filiallar tuzilmasiga qanday mos kelishini ko‘ring.',
+      subtitle: 'A.L.I.A markazingiz ish jarayoniga va filiallar tuzilmasiga qanday mos kelishini ko‘ring.',
       confirmedTitle: 'Demo so‘rovingiz tasdiqlandi!',
       confirmedMessage: 'Rahmat! Mutaxassisimiz 15 daqiqa ichida siz bilan bog‘lanib, uchrashuv vaqtini belgilaydi.',
       stepContact: 'Aloqa ma’lumotlari',
@@ -661,7 +661,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       trustTrial: '14 дней бесплатного периода',
       trustSetup: 'Быстрый запуск за 15 минут',
       trustMigration: 'Бесплатный перенос данных',
-      dashboardTitle: 'edusphere.app/admin/dashboard',
+      dashboardTitle: 'alia.app/admin/dashboard',
       liveSystem: 'Живая система',
       activeStudents: 'Активные студенты',
       thisMonth: '↑ +12.4% за месяц',
@@ -696,7 +696,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       subheading: 'Ведение учета на бумаге или в разрозненных чатах приводит к долгам, утерянным лидам и выгоранию администраторов.',
       oldWayTitle: 'Старый подход (Excel, бумаги и чаты)',
       oldWayTag: 'Высокий риск и потери',
-      newWayTitle: 'Решение EduSphere',
+      newWayTitle: 'Решение A.L.I.A',
       newWayTag: '100% Автоматизировано',
       items: [
         {
@@ -810,7 +810,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     tour: {
       badge: 'Интерактивный процесс',
       heading: 'Взгляните на систему изнутри',
-      subheading: 'Переключайтесь между ключевыми модулями, чтобы увидеть, как EduSphere упрощает работу.',
+      subheading: 'Переключайтесь между ключевыми модулями, чтобы увидеть, как A.L.I.A упрощает работу.',
       seeDemoBtn: 'Смотреть полное демо',
       liveInterface: 'Интерфейс платформы',
       synced: '100% Синхронизация',
@@ -863,7 +863,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     roi: {
       badge: 'Калькулятор Экономии',
-      heading: 'Рассчитайте, сколько времени и денег сэкономит EduSphere',
+      heading: 'Рассчитайте, сколько времени и денег сэкономит A.L.I.A',
       subheading: 'Укажите параметры вашего центра, чтобы увидеть экономию часов администрирования и возвращенные средства.',
       slider1Label: 'Всего активных учеников',
       slider2Label: 'Количество филиалов',
@@ -881,7 +881,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     testimonials: {
       badge: 'Проверенные результаты',
       heading: 'Отзывы директоров и основателей учебных центров',
-      subheading: 'Узнайте, как руководители трансформировали работу, удержание клиентов и выручку с помощью EduSphere.',
+      subheading: 'Узнайте, как руководители трансформировали работу, удержание клиентов и выручку с помощью A.L.I.A.',
       testimonials: [
         {
           quote:
@@ -903,7 +903,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           quote:
-            'Управление 6 филиалами в Excel было кошмаром. С EduSphere я вижу реальное количество учеников, денежный поток и работу сотрудников со своего смартфона.',
+            'Управление 6 филиалами в Excel было кошмаром. С A.L.I.A я вижу реальное количество учеников, денежный поток и работу сотрудников со своего смартфона.',
           author: 'Алишер Кадыров',
           role: 'Генеральный директор',
           company: 'ProTech IT Academy',
@@ -985,7 +985,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     faq: {
       badge: 'Остались вопросы?',
       heading: 'Часто задаваемые вопросы',
-      subheading: 'Все, что вам нужно знать о внедрении EduSphere в ваш учебный центр.',
+      subheading: 'Все, что вам нужно знать о внедрении A.L.I.A в ваш учебный центр.',
       faqs: [
         {
           q: 'Сколько времени занимает перенос данных из Excel или другой системы?',
@@ -993,11 +993,11 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           q: 'Могут ли родители оплачивать обучение онлайн через систему?',
-          a: 'Да! EduSphere интегрирован с популярными платежными системами (Payme, Click, Stripe, банковские карты). Родители получают прямую ссылку на оплату в SMS или в приложении.',
+          a: 'Да! A.L.I.A интегрирован с популярными платежными системами (Payme, Click, Stripe, банковские карты). Родители получают прямую ссылку на оплату в SMS или в приложении.',
         },
         {
-          q: 'Поддерживает ли EduSphere работу нескольких филиалов и франшиз?',
-          a: 'Абсолютно. EduSphere создавался специально для сетевых учебных центров. Менеджеры видит только свой филиал, а собственник имеет единый дашборд.',
+          q: 'Поддерживает ли A.L.I.A работу нескольких филиалов и франшиз?',
+          a: 'Абсолютно. A.L.I.A создавался специально для сетевых учебных центров. Менеджеры видит только свой филиал, а собственник имеет единый дашборд.',
         },
         {
           q: 'Как работает система посещаемости по QR-коду?',
@@ -1008,7 +1008,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           a: 'Безопасность — наш главный приоритет. Мы используем SSL-шифрование, ежедневные бэкапы и облачную инфраструктуру, соответствующую стандарту SOC2.',
         },
         {
-          q: 'Могу ли я протестировать EduSphere перед покупкой?',
+          q: 'Могу ли я протестировать A.L.I.A перед покупкой?',
           a: 'Да, мы предоставляем 14 дней полного бесплатного тестового периода без ввода банковской карты.',
         },
       ],
@@ -1043,7 +1043,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     demoModal: {
       personalizedWalkthrough: 'Персональная 1-на-1 презентация',
       title: 'Закажите демонстрацию для вашего центра',
-      subtitle: 'Узнайте, как EduSphere адаптируется под ваши процессы и структуру филиалов.',
+      subtitle: 'Узнайте, как A.L.I.A адаптируется под ваши процессы и структуру филиалов.',
       confirmedTitle: 'Заявка на демо подтверждена!',
       confirmedMessage: 'Спасибо! Наш специалист свяжется с вами в течение 15 минут для согласования времени демонстрации.',
       stepContact: 'Контакты',
@@ -1091,7 +1091,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       trustTrial: '14-Day Free Trial',
       trustSetup: 'Instant Setup in 15 Mins',
       trustMigration: 'Free Data Migration',
-      dashboardTitle: 'edusphere.app/admin/dashboard',
+      dashboardTitle: 'alia.app/admin/dashboard',
       liveSystem: 'Live System',
       activeStudents: 'Active Students',
       thisMonth: '↑ +12.4% this mo',
@@ -1126,7 +1126,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       subheading: 'Managing a learning center on paper or disjointed apps causes uncollected debts, lost leads, parent complaints, and administrative burnout.',
       oldWayTitle: 'The Old Way (Excel, Papers & Chat)',
       oldWayTag: 'High Risk & Loss',
-      newWayTitle: 'The EduSphere Solution',
+      newWayTitle: 'The A.L.I.A Solution',
       newWayTag: '100% Automated',
       items: [
         {
@@ -1240,7 +1240,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     tour: {
       badge: 'Interactive Workflow',
       heading: 'Take a closer look inside the platform',
-      subheading: 'Click through the core workflows to experience how EduSphere simplifies daily management for learning centers.',
+      subheading: 'Click through the core workflows to experience how A.L.I.A simplifies daily management for learning centers.',
       seeDemoBtn: 'See Full Demo in Action',
       liveInterface: 'Live Interface',
       synced: '100% Synced',
@@ -1293,7 +1293,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     roi: {
       badge: 'Interactive Savings Estimator',
-      heading: 'Calculate how much time & money EduSphere will save you',
+      heading: 'Calculate how much time & money A.L.I.A will save you',
       subheading: 'Adjust your center’s numbers to see estimated weekly hours saved on manual admin work, uncollected tuition recovered, and recovered leads.',
       slider1Label: 'Total Active Students',
       slider2Label: 'Number of Branches',
@@ -1311,11 +1311,11 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     testimonials: {
       badge: 'Proven Results',
       heading: 'Loved by learning center directors & founders',
-      subheading: 'Hear how leaders transformed their educational operations, student retention, and revenue with EduSphere.',
+      subheading: 'Hear how leaders transformed their educational operations, student retention, and revenue with A.L.I.A.',
       testimonials: [
         {
           quote:
-            'EduSphere transformed our learning center completely. Before, we lost 30% of incoming leads because managers forgot to call back. Now everything is tracked, and our monthly revenue grew by 45% in 6 months.',
+            'A.L.I.A transformed our learning center completely. Before, we lost 30% of incoming leads because managers forgot to call back. Now everything is tracked, and our monthly revenue grew by 45% in 6 months.',
           author: 'Jane Smith',
           role: 'Founder & CEO',
           company: 'Apex Education Center (4 Branches)',
@@ -1333,7 +1333,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           quote:
-            'Managing 6 branches used to be a nightmare with Excel. With EduSphere, I can see real-time student count, cash flow, teacher attendance, and sales performance from my smartphone anywhere in the world.',
+            'Managing 6 branches used to be a nightmare with Excel. With A.L.I.A, I can see real-time student count, cash flow, teacher attendance, and sales performance from my smartphone anywhere in the world.',
           author: 'John Doe',
           role: 'General Director',
           company: 'ProTech IT Academy',
@@ -1415,7 +1415,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     faq: {
       badge: 'Got Questions?',
       heading: 'Frequently Asked Questions',
-      subheading: 'Everything you need to know about setting up EduSphere in your learning center.',
+      subheading: 'Everything you need to know about setting up A.L.I.A in your learning center.',
       faqs: [
         {
           q: 'How long does it take to migrate our data from Excel or another system?',
@@ -1423,11 +1423,11 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           q: 'Can parents pay tuition online through the system?',
-          a: 'Yes! EduSphere integrates with popular online payment gateways (Payme, Click, Stripe, PayPal, local bank cards). Parents receive a direct payment link in SMS or inside their Parent Portal.',
+          a: 'Yes! A.L.I.A integrates with popular online payment gateways (Payme, Click, Stripe, PayPal, local bank cards). Parents receive a direct payment link in SMS or inside their Parent Portal.',
         },
         {
-          q: 'Does EduSphere support multiple branches and franchises?',
-          a: 'Absolutely. EduSphere was engineered specifically for multi-branch learning centers. Branch managers see only their branch data, while central directors and owners have a unified global dashboard.',
+          q: 'Does A.L.I.A support multiple branches and franchises?',
+          a: 'Absolutely. A.L.I.A was engineered specifically for multi-branch learning centers. Branch managers see only their branch data, while central directors and owners have a unified global dashboard.',
         },
         {
           q: 'How does the QR Code attendance system work?',
@@ -1438,14 +1438,14 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           a: 'Security is our top priority. We use SSL encryption in transit, daily database backups, strict role-based access control (RBAC), and SOC2 compliant cloud server infrastructure.',
         },
         {
-          q: 'Can I try EduSphere before purchasing?',
+          q: 'Can I try A.L.I.A before purchasing?',
           a: 'Yes, we offer a 14-day full feature free trial with no credit card required. You can also book a live 1-on-1 demo with our product expert.',
         },
       ],
     },
     cta: {
       heading: 'Ready to transform your learning center operations?',
-      subheading: 'Join 350+ modern education centers today. Get a customized demo and see how EduSphere can eliminate chaos and boost your revenue.',
+      subheading: 'Join 350+ modern education centers today. Get a customized demo and see how A.L.I.A can eliminate chaos and boost your revenue.',
       bookDemoBtn: 'Book Your Live Demo Now',
       freeTrialBtn: 'Start 14-Day Free Trial',
       guaranteeText: 'No credit card required • Instant setup • Cancel anytime',
@@ -1473,7 +1473,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     demoModal: {
       personalizedWalkthrough: 'Personalized 1-on-1 Walkthrough',
       title: 'Book a Live Demo for Your Center',
-      subtitle: 'See how EduSphere fits your learning center’s exact workflow & branch structure.',
+      subtitle: 'See how A.L.I.A fits your learning center’s exact workflow & branch structure.',
       confirmedTitle: 'Demo Request Confirmed!',
       confirmedMessage: 'Thank you! Our education systems specialist will reach out to you via WhatsApp / Phone within 15 minutes to schedule your walkthrough.',
       stepContact: 'Contact Info',

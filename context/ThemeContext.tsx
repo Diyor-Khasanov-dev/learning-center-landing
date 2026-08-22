@@ -14,7 +14,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') return 'dark'
-  const storedTheme = localStorage.getItem('edusphere-theme') as Theme | null
+  const storedTheme = (localStorage.getItem('alia-theme') || localStorage.getItem('edusphere-theme')) as Theme | null
   if (storedTheme === 'light' || storedTheme === 'dark') {
     return storedTheme
   }
@@ -34,7 +34,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     } else {
       root.classList.remove('dark')
     }
-    localStorage.setItem('edusphere-theme', theme)
+    localStorage.setItem('alia-theme', theme)
   }, [theme])
 
   const toggleTheme = () => {

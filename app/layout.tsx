@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadataBase = new URL(
-  process.env.NEXT_PUBLIC_APP_URL || "https://edusphere.app"
+  process.env.NEXT_PUBLIC_APP_URL || "https://alia.app"
 );
 
 export const viewport: Viewport = {
@@ -20,19 +20,20 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase,
   title: {
-    default: "EduSphere — O'quv Markazlarini Boshqarish Tizimi | Ta'lim ERP va CRM",
-    template: "%s | EduSphere",
+    default: "A.L.I.A - Academic Lead & Intelligence Assistant | Ta'lim ERP va CRM",
+    template: "%s | A.L.I.A",
   },
   description:
-    "EduSphere — O'quv markazlari, til akademiyalari va IT maktablar uchun #1 ERP va CRM boshqaruv tizimi. Sotuvlar CRM, QR davomat, oylik to'lovlar, avto-SMS va ko'p filialli analitika. CRM для учебных центров, языковых школ и IT академий.",
+    "A.L.I.A (Academic Lead & Intelligence Assistant) — O'quv markazlari, til akademiyalari va IT maktablar uchun #1 ERP va CRM boshqaruv tizimi. Sotuvlar CRM, QR davomat, oylik to'lovlar, avto-SMS va ko'p filialli analitika. CRM для учебных центров, языковых школ и IT академий.",
   keywords: [
     // Uzbek keywords
+    "alia",
+    "alia app",
+    "academic lead intelligence assistant",
     "o'quv markaz dasturi",
     "ta'lim markazini boshqarish",
     "o'quv markaz CRM",
     "o'quv markaz ERP",
-    "edusphere",
-    "edusphere.app",
     "modme muqobili",
     "o'quv markazi avtomatlashtirish",
     "talabalar davomati",
@@ -60,6 +61,8 @@ export const metadata: Metadata = {
     "CRM Uzbekistan",
     "CRM Tashkent",
     // English keywords
+    "A.L.I.A",
+    "Academic Lead & Intelligence Assistant",
     "learning center management software",
     "education ERP",
     "education CRM",
@@ -68,13 +71,13 @@ export const metadata: Metadata = {
     "student attendance software",
     "school billing system",
     "multi branch education platform",
-    "edusphere app",
+    "alia app",
   ],
-  authors: [{ name: "EduSphere Team", url: "https://edusphere.app" }],
-  creator: "EduSphere",
-  publisher: "EduSphere Inc.",
+  authors: [{ name: "A.L.I.A Team", url: "https://alia.app" }],
+  creator: "A.L.I.A",
+  publisher: "A.L.I.A Inc.",
   category: "Education & Business Management Software",
-  applicationName: "EduSphere",
+  applicationName: "A.L.I.A",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -90,11 +93,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "EduSphere — O'quv Markazlarini Boshqarish Tizimi | Ta'lim ERP va CRM",
+    title: "A.L.I.A - Academic Lead & Intelligence Assistant | Ta'lim ERP va CRM",
     description:
       "O'quv markazlari, til akademiyalari va IT maktablar uchun 1-raqamli ERP va CRM platformasi. Sotuvlar, QR davomat, avto-SMS, to'lovlar va filiallar tahlili.",
-    url: "https://edusphere.app",
-    siteName: "EduSphere",
+    url: "https://alia.app",
+    siteName: "A.L.I.A",
     locale: "uz_UZ",
     alternateLocale: ["ru_RU", "en_US"],
     type: "website",
@@ -103,19 +106,19 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=630&auto=format&fit=crop&q=80",
         width: 1200,
         height: 630,
-        alt: "EduSphere — Ta'lim markazlarini boshqarish platformasi",
+        alt: "A.L.I.A - Academic Lead & Intelligence Assistant — Ta'lim markazlarini boshqarish platformasi",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EduSphere — O'quv Markazlarini Boshqarish Tizimi",
+    title: "A.L.I.A - Academic Lead & Intelligence Assistant",
     description:
       "O'quv markazlari uchun eng ilg'or ERP va CRM platformasi. Sotuvlar, davomat, to'lovlar va filiallar boshqaruvi.",
     images: [
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=630&auto=format&fit=crop&q=80",
     ],
-    creator: "@edusphere",
+    creator: "@alia_app",
   },
   robots: {
     index: true,
