@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { ArrowUpRight, BadgeCheck, Github, Linkedin, Sparkles, Users } from 'lucide-react'
+import { ArrowUpRight, BadgeCheck, Sparkles, Users } from 'lucide-react'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { useLanguage } from '@/context/LanguageContext'
 import { TRANSLATIONS } from '@/data/translations'
 
@@ -107,12 +108,16 @@ export function TeamSection() {
                   <div className='mt-auto flex items-center justify-between border-t border-slate-100 pt-4 dark:border-white/10'>
                     <span className='text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400 dark:text-slate-500'>A.L.I.A Team</span>
                     <div className='flex items-center gap-2'>
-                      <a href={member.github} target='_blank' rel='noopener noreferrer' aria-label={`${member.name}'s GitHub`} className='flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-violet-500 dark:hover:bg-violet-600'>
-                        <Github className='h-4 w-4' />
-                      </a>
-                      <a href={member.linkedin} target='_blank' rel='noopener noreferrer' aria-label={`${member.name}'s LinkedIn`} className='flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-[#0077b5] hover:bg-[#0077b5] hover:text-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300'>
-                        <Linkedin className='h-4 w-4' />
-                      </a>
+                      {member.github && (
+                        <a href={member.github} target='_blank' rel='noopener noreferrer' aria-label={`${member.name}'s GitHub`} className='flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-violet-500 dark:hover:bg-violet-600'>
+                          <FaGithub className='h-4 w-4' aria-hidden='true' />
+                        </a>
+                      )}
+                      {member.linkedin && (
+                        <a href={member.linkedin} target='_blank' rel='noopener noreferrer' aria-label={`${member.name}'s LinkedIn`} className='flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-[#0077b5] hover:bg-[#0077b5] hover:text-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300'>
+                          <FaLinkedinIn className='h-4 w-4' aria-hidden='true' />
+                        </a>
+                      )}
                       <span className='flex h-9 w-9 items-center justify-center rounded-xl bg-violet-50 text-violet-600 dark:bg-violet-500/10 dark:text-violet-300'>
                         <ArrowUpRight className='h-4 w-4' />
                       </span>

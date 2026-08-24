@@ -71,8 +71,8 @@ export interface TeamMember {
   name: string
   role: string
   image: string
-  github: string
-  linkedin: string
+  github?: string
+  linkedin?: string
   bio?: string
 }
 
