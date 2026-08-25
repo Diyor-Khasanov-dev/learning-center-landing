@@ -232,66 +232,78 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       bookDemo: 'Bepul demo',
     },
     team: {
-      badge: "Kompaniya asoschilari",
-      heading: "A.L.I.A ortida turgan jamoa",
-      subheading: "Ta'lim sohasini avtomatlashtirish va innovatsiyalarni joriy etishga bel bog'lagan mutaxassislarimiz bilan tanishing.",
+      badge: 'Kompaniya asoschilari',
+      heading: 'A.L.I.A ortida turgan jamoa',
+      subheading:
+        "Ta'lim sohasini avtomatlashtirish va innovatsiyalarni joriy etishga bel bog'lagan mutaxassislarimiz bilan tanishing.",
       members: [
         {
           id: '1',
           name: 'Nurulloh Islomov',
-          role: 'Co-Founder & CEO',
-          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
-          bio: 'EdTech sohasida 7 yillik tajribaga ega strateg va tadbirkor.',
+          role: 'Co-Founder & Backend Engineer',
+          image:
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/nurulloh-coder-dev',
+          linkedin: 'https://www.linkedin.com/in/nurilloh-islomov-9b4a43386',
         },
         {
           id: '2',
           name: 'Diyor Khasanov',
-          role: 'Co-Founder & CTO',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
-          bio: 'Yuqori yuklamali bulutli tizimlar va ma’lumotlar xavfsizligi arxitektori.',
+          role: 'Co-Founder & Frontend Engineer',
+          image:
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/Diyor-Khasanov-dev',
+          linkedin: 'https://linkedin.com/in/diyor-khasanov',
         },
         {
           id: '3',
           name: 'Abdulmajid Sharipov',
-          role: 'Head of Product & UX',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
-          bio: 'Qulay va intuitiv foydalanuvchi interfeyslari bo‘yicha ekspert.',
+          role: 'Co-Founder & Frontend Engineer',
+          image:
+            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/Abdulmajidkhan007',
+          linkedin: 'https://linkedin.com/in/abdulmajid-sharipov-profile',
         },
         {
           id: '4',
           name: 'Muhammadali Yoqubjonov',
-          role: 'Lead Full-Stack Engineer',
-          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
-          bio: 'React, Next.js va mikroservislar bo‘yicha bosh dasturchi.',
+          role: 'Co-Founder & Frontend Engineer',
+          image:
+            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/goodman113',
+          linkedin: 'https://www.linkedin.com/in/muhammadali-yokubjonov-2241972b6/',
         },
         {
           id: '5',
-          name: 'Team Member (Coming Soon)',
-          role: 'Head of Customer Success',
-          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
-          bio: 'Ta’lim markazlarini onboarding qilish va qo‘llab-quvvatlash yetakchisi.',
+          name: 'Oybek Abdullayev',
+          role: 'Co-Founder & Backend Engineer',
+          image:
+            'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+          github: 'https://github.com/powerful10',
+          linkedin: 'https://linkedin.com/in/oybek-abdullayev-720a41401',
         },
       ],
     },
     hero: {
       badge: "Yangi avlod ta'lim markazini boshqarish platformasi",
       titlePart1: "Ta'lim markazingizni",
-      titleHighlight: "100% aniqlik",
+      titleHighlight: '100% aniqlik',
       titlePart2: 'va yo‘qotishlarsiz boshqaring.',
-      description: "Zamonaviy ta'lim markazlari, til akademiyalari va IT maktablar uchun maxsus yaratilgan yaxlit ERP va CRM tizimi. Sotuvlar, davomat, to'lovlar va filiallar boshqaruvini avtomatlashtiring.",
+      description:
+        "Zamonaviy ta'lim markazlari, til akademiyalari va IT maktablar uchun maxsus yaratilgan yaxlit ERP va CRM tizimi. Sotuvlar, davomat, to'lovlar va filiallar boshqaruvini avtomatlashtiring.",
       bookDemoBtn: 'Bepul 1-ga-1 demo olings',
       watchTourBtn: "Interaktiv turni ko'rish",
       trustTrial: '14 kunlik bepul sinov',
-      trustSetup: "15 daqiqada tezkor sozlash",
+      trustSetup: '15 daqiqada tezkor sozlash',
       trustMigration: "Bepul ma'lumotlarni ko'chirish",
       dashboardTitle: 'alia.app/admin/dashboard',
       liveSystem: 'Jonli tizim',
       activeStudents: 'Faol o‘quvchilar',
       thisMonth: '↑ +12.4% bu oy',
-      monthlyTuition: "Oylik tushum",
+      monthlyTuition: 'Oylik tushum',
       collected: "98% yig'ilgan",
       newLeads: 'Yangi lidlar CRM',
-      readyToEnroll: '32 tasi a\'zo bo\'lishga tayyor',
+      readyToEnroll: "32 tasi a'zo bo'lishga tayyor",
       attendanceToday: 'Bugungi davomat',
       qrActive: 'QR check-in faol',
       revenueChartTitle: 'Daromad va qarzdorlik tahlili',
@@ -315,8 +327,9 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     comparison: {
       badge: 'Excel va Telegram tartibsizligiga chek qo‘ying',
-      heading: "Eski usullarda boshqarish sizga qanchaga tushayotganini bilasizmi?",
-      subheading: "Qog'ozlar va tarqoq ilovalar orqali boshqarish to'lanmagan qarzdorliklarga, yo'qolgan lidlarga va adminlarning toliqishiga olib keladi.",
+      heading: 'Eski usullarda boshqarish sizga qanchaga tushayotganini bilasizmi?',
+      subheading:
+        "Qog'ozlar va tarqoq ilovalar orqali boshqarish to'lanmagan qarzdorliklarga, yo'qolgan lidlarga va adminlarning toliqishiga olib keladi.",
       oldWayTitle: 'Eski usul (Excel, Qog‘ozlar va Chatlar)',
       oldWayTag: 'Yuqori xavf va yo‘qotish',
       newWayTitle: 'A.L.I.A yechimi',
@@ -325,17 +338,21 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         {
           category: 'Lidlar va Talabalar boshqaruvi',
           oldWay: 'Telegram guruhlarida va tartibsiz Excel jadvallarida yo‘qolgan lidlar.',
-          newWay: 'Avtomatik lid qabul qilish, status teglari va SMS xabarnomalar bilan yagona CRM.',
+          newWay:
+            'Avtomatik lid qabul qilish, status teglari va SMS xabarnomalar bilan yagona CRM.',
         },
         {
           category: 'Davomat va Darslarni kuzatish',
-          oldWay: 'Qog‘oz jurnallar yoki kechiktirilgan qo‘lda kiritishlar oqibatida yo‘qotilgan davomat.',
+          oldWay:
+            'Qog‘oz jurnallar yoki kechiktirilgan qo‘lda kiritishlar oqibatida yo‘qotilgan davomat.',
           newWay: 'Kechikmasdan QR kod skanerlash va ota-onalarga avtomatik SMS bildirishnomalari.',
         },
         {
           category: 'Moliyaviy hisobot va Oylik to‘lovlar',
-          oldWay: 'Naqd pul hisobidagi xatolar, yig‘ilmagan qarzlar va cheklar chop etishdagi xaos.',
-          newWay: 'Avtomatlashtirilgan hisob-kitob, onlayn to‘lov tizimlari va darhol qarzdorlar hisoboti.',
+          oldWay:
+            'Naqd pul hisobidagi xatolar, yig‘ilmagan qarzlar va cheklar chop etishdagi xaos.',
+          newWay:
+            'Avtomatlashtirilgan hisob-kitob, onlayn to‘lov tizimlari va darhol qarzdorlar hisoboti.',
         },
         {
           category: 'O‘qituvchilar maoshi va KPI',
@@ -352,14 +369,37 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     features: {
       badge: 'To‘liq funksional imkoniyatlar',
       heading: "Ta'lim markazingizni kengaytirish uchun barcha kerakli vositalar",
-      subheading: 'Administratorlar, sotuvchilar, o‘qituvchilar, talabalar va ota-onalar uchun qulay imkoniyatlar.',
+      subheading:
+        'Administratorlar, sotuvchilar, o‘qituvchilar, talabalar va ota-onalar uchun qulay imkoniyatlar.',
       filterLabel: 'Modullarni rol bo‘yicha filtrlash',
       requestDemo: 'Ushbu modul uchun jonli demo so‘rash',
       roleFilterOptions: [
-        { value: 'all', label: 'Barcha modullar', description: 'Platformaning barcha imkoniyatlari', icon: Filter },
-        { value: 'admin', label: 'Admin va Egalari', description: 'Analitika, maosh va moliya', icon: Building2, badge: 'To‘liq nazorat' },
-        { value: 'sales', label: 'CRM va Sotuv', description: 'Lidlar, voronka va avto SMS', icon: PhoneCall, badge: '+35% Sotuv' },
-        { value: 'teacher', label: 'O‘qituvchilar', description: 'QR davomat va dars jurnallari', icon: QrCode },
+        {
+          value: 'all',
+          label: 'Barcha modullar',
+          description: 'Platformaning barcha imkoniyatlari',
+          icon: Filter,
+        },
+        {
+          value: 'admin',
+          label: 'Admin va Egalari',
+          description: 'Analitika, maosh va moliya',
+          icon: Building2,
+          badge: 'To‘liq nazorat',
+        },
+        {
+          value: 'sales',
+          label: 'CRM va Sotuv',
+          description: 'Lidlar, voronka va avto SMS',
+          icon: PhoneCall,
+          badge: '+35% Sotuv',
+        },
+        {
+          value: 'teacher',
+          label: 'O‘qituvchilar',
+          description: 'QR davomat va dars jurnallari',
+          icon: QrCode,
+        },
       ],
       modules: [
         {
@@ -367,73 +407,110 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'sales',
           title: 'Lid CRM va Voronka',
           tagline: 'Murojaatlarni tezroq to‘lovchi o‘quvchilarga aylantiring',
-          description: 'Instagram, Facebook, Veb-sayt va kelgan so‘rovlarni bitta joyda kuzating. Avto-menejer biriktirish va SMS eslatmalar yuborish.',
+          description:
+            'Instagram, Facebook, Veb-sayt va kelgan so‘rovlarni bitta joyda kuzating. Avto-menejer biriktirish va SMS eslatmalar yuborish.',
           badge: 'Sotuv o‘sishi +35%',
           icon: PhoneCall,
           color: 'from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400',
-          highlights: ['Ko‘p kanalli lid qabul qilish', 'Kanban doskasi', 'Avtomatik SMS va WhatsApp eslatmalar', 'Menejerlar statistikasi'],
+          highlights: [
+            'Ko‘p kanalli lid qabul qilish',
+            'Kanban doskasi',
+            'Avtomatik SMS va WhatsApp eslatmalar',
+            'Menejerlar statistikasi',
+          ],
         },
         {
           id: 'student-mgmt',
           role: 'admin',
           title: 'Talabalar va Kurslar Administratsiyasi',
           tagline: 'O‘quvchilarning to‘liq siklini boshqarish',
-          description: 'Guruhlar, dars jadvallari, o‘quvchi profillari, guruhdan-guruhga o‘tkazish va sertifikatlarni oson boshqaring.',
+          description:
+            'Guruhlar, dars jadvallari, o‘quvchi profillari, guruhdan-guruhga o‘tkazish va sertifikatlarni oson boshqaring.',
           badge: '90% kamroq admin vaqti',
           icon: GraduationCap,
           color: 'from-violet-500/20 to-purple-500/20 border-violet-500/30 text-violet-400',
-          highlights: ['Guruhlar va sig‘im limitlari', 'O‘quvchi tarixi va statusi', 'Sertifikatlar generatori', 'Filiallar o‘rtasida o‘tkazish'],
+          highlights: [
+            'Guruhlar va sig‘im limitlari',
+            'O‘quvchi tarixi va statusi',
+            'Sertifikatlar generatori',
+            'Filiallar o‘rtasida o‘tkazish',
+          ],
         },
         {
           id: 'attendance',
           role: 'teacher',
           title: 'Aqlli Davomat va QR Check-in',
           tagline: 'Ota-onalarga zumda SMS yuboruvchi QR tizim',
-          description: 'O‘qituvchilar yoki resepshn o‘quvchining QR passini skanerlaydi. O‘quvchi kelganda yoki qoldirganda ota-onasiga darhol SMS boradi.',
+          description:
+            'O‘qituvchilar yoki resepshn o‘quvchining QR passini skanerlaydi. O‘quvchi kelganda yoki qoldirganda ota-onasiga darhol SMS boradi.',
           badge: '0% davomat soxtaligi',
           icon: QrCode,
           color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400',
-          highlights: ['O‘quvchi QR pass generatori', 'Darhol avtomatik SMS', 'Kechikish va sababli qoldirishlar', 'O‘qituvchi dars jurnali'],
+          highlights: [
+            'O‘quvchi QR pass generatori',
+            'Darhol avtomatik SMS',
+            'Kechikish va sababli qoldirishlar',
+            'O‘qituvchi dars jurnali',
+          ],
         },
         {
           id: 'finance',
           role: 'admin',
           title: 'Hisob-kitob, Qarz Nazorati va Maosh',
           tagline: 'Moliyaviy shaffoflik va avtomatik cheklar',
-          description: 'Oylik to‘lovlarni avtomatlashtiring, chegirmalarni boshqaring, qarzdorlarga SMS yuboring va o‘qituvchilar maoshini avto hisoblang.',
+          description:
+            'Oylik to‘lovlarni avtomatlashtiring, chegirmalarni boshqaring, qarzdorlarga SMS yuboring va o‘qituvchilar maoshini avto hisoblang.',
           badge: 'Qarzdorliksiz moliya',
           icon: CreditCard,
           color: 'from-blue-500/20 to-cyan-500/20 border-blue-500/30 text-blue-400',
-          highlights: ['Onlayn to‘lov tizimlari', 'SMS orqali qarz eslatmalari', 'Moslashuvchan chegirmalar', 'O‘qituvchilar KPI va maosh hisobi'],
+          highlights: [
+            'Onlayn to‘lov tizimlari',
+            'SMS orqali qarz eslatmalari',
+            'Moslashuvchan chegirmalar',
+            'O‘qituvchilar KPI va maosh hisobi',
+          ],
         },
         {
           id: 'lms',
           role: 'student',
           title: 'LMS, Uy vazifasi va Test Platformasi',
           tagline: 'O‘quvchilarni darsdan tashqarida ham jalb qiling',
-          description: 'O‘qituvchilar darsliklar, video va testlar yuklaydi. O‘quvchilar vazifalarni onlayn topshiradi va reytingda bellashadi.',
+          description:
+            'O‘qituvchilar darsliklar, video va testlar yuklaydi. O‘quvchilar vazifalarni onlayn topshiradi va reytingda bellashadi.',
           badge: '2x yuqori qiziqish',
           icon: BookOpen,
           color: 'from-pink-500/20 to-rose-500/20 border-pink-500/30 text-pink-400',
-          highlights: ['Video darslar ombori', 'Uy vazifalarini baholash', 'O‘quvchi reytingi va tangalar', 'Avtomatik test baholash'],
+          highlights: [
+            'Video darslar ombori',
+            'Uy vazifalarini baholash',
+            'O‘quvchi reytingi va tangalar',
+            'Avtomatik test baholash',
+          ],
         },
         {
           id: 'analytics',
           role: 'admin',
           title: 'Kengaytirilgan Analitika va BI',
           tagline: 'Rahbarlar uchun real vaqtdagi boshqaruv paneli',
-          description: 'Barcha filiallar ko‘rsatkichlarini bitta joyda kuzating. Tushum prognozlari, talabalar ketish foizi va eng yaxshi o‘qituvchilar.',
+          description:
+            'Barcha filiallar ko‘rsatkichlarini bitta joyda kuzating. Tushum prognozlari, talabalar ketish foizi va eng yaxshi o‘qituvchilar.',
           badge: '360° Boshqaruv ko‘rinishi',
           icon: BarChart3,
           color: 'from-indigo-500/20 to-sky-500/20 border-indigo-500/30 text-indigo-400',
-          highlights: ['Ko‘p fillialli jamlangan ko‘rinish', 'O‘quvchilar saqlanish analitikasi', 'Moliya va cashflow prognozi', 'PDF va Excel hisobotlar'],
+          highlights: [
+            'Ko‘p fillialli jamlangan ko‘rinish',
+            'O‘quvchilar saqlanish analitikasi',
+            'Moliya va cashflow prognozi',
+            'PDF va Excel hisobotlar',
+          ],
         },
       ],
     },
     tour: {
       badge: 'Interaktiv ish jarayoni',
       heading: 'Platformaning ichki imkoniyatlari bilan tanishing',
-      subheading: 'A.L.I.A markazingiz boshqaruvini qanchalik soddalashtirishini his qilish uchun bo‘limlarni bosing.',
+      subheading:
+        'A.L.I.A markazingiz boshqaruvini qanchalik soddalashtirishini his qilish uchun bo‘limlarni bosing.',
       seeDemoBtn: 'Jonli demoga yozilish',
       liveInterface: 'Jonli interfeys',
       synced: '100% Sinxronlangan',
@@ -487,7 +564,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     roi: {
       badge: 'Teqjamkorlik Kalkulyatori',
       heading: 'A.L.I.A qancha vaqt va mablag‘ingizni tejashini hisoblang',
-      subheading: 'Markazingiz ko‘rsatkichlarini tanlang va har haftalik tejaladigan admin vaqtini hamda qaytarilgan mablag‘larni ko‘ring.',
+      subheading:
+        'Markazingiz ko‘rsatkichlarini tanlang va har haftalik tejaladigan admin vaqtini hamda qaytarilgan mablag‘larni ko‘ring.',
       slider1Label: 'Faol o‘quvchilar soni',
       slider2Label: 'Filiallar soni',
       slider1Unit: 'ta o‘quvchi',
@@ -504,7 +582,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     testimonials: {
       badge: 'Isbotlangan natijalar',
       heading: "Ta'lim markazi rahbarlari va asoschilari e'tirofi",
-      subheading: 'Yetakchilar A.L.I.A yordamida jarayonlarni va daromadni qanday oshirganini bilib oling.',
+      subheading:
+        'Yetakchilar A.L.I.A yordamida jarayonlarni va daromadni qanday oshirganini bilib oling.',
       testimonials: [
         {
           quote:
@@ -513,7 +592,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Asoschi va CEO',
           company: 'Apex Education Center (4 filial)',
           stats: '+45% Daromad o‘sishi',
-          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
         },
         {
           quote:
@@ -522,7 +602,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Akademik Direktor',
           company: 'Bright Minds Language Academy',
           stats: 'Kuniga 2 soat tejaladi',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
         },
         {
           quote:
@@ -531,14 +612,16 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Bosh Direktor',
           company: 'ProTech IT Academy',
           stats: '6 ta filial birlashtirildi',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
         },
       ],
     },
     pricing: {
       badge: 'Ochiq va shaffof narxlar',
       heading: 'Har qanday hajmga mos keladigan rejalari',
-      subheading: 'Yashirin to‘lovlar yo‘q. O‘sgan sari tarifingizni istalgan vaqtda o‘zgartirishingiz mumkin.',
+      subheading:
+        'Yashirin to‘lovlar yo‘q. O‘sgan sari tarifingizni istalgan vaqtda o‘zgartirishingiz mumkin.',
       monthlyBilling: 'Oylik to‘lov',
       annualBilling: 'Yillik to‘lov',
       savePercent: '20% tejang',
@@ -628,7 +711,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         },
         {
           q: "Bizning ma'lumotlarimiz xavfsizligi kafolatlanganmi?",
-          a: "Xavfsizlik bizning eng ustuvor vazifamizdir. Biz SSL shifrlash, har kunlik zaxira nusxalash va SOC2 standartlariga mos keladigan bulutli serverlardan foydalanamiz.",
+          a: 'Xavfsizlik bizning eng ustuvor vazifamizdir. Biz SSL shifrlash, har kunlik zaxira nusxalash va SOC2 standartlariga mos keladigan bulutli serverlardan foydalanamiz.',
         },
         {
           q: 'A.L.I.A-ni xarid qilishdan oldin sinab ko‘rish mumkinmi?',
@@ -638,14 +721,16 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     cta: {
       heading: 'O‘quv markazingiz boshqaruvini o‘zgartirishga tayyormisiz?',
-      subheading: 'Bugunning o‘zida 350+ ta’lim markazlariga qo‘shiling. Jonli demoni ko‘ring va tartibsizliklarga barham bering.',
+      subheading:
+        'Bugunning o‘zida 350+ ta’lim markazlariga qo‘shiling. Jonli demoni ko‘ring va tartibsizliklarga barham bering.',
       bookDemoBtn: 'Jonli demo belgilash',
       freeTrialBtn: '14 kunlik bepul sinov',
       guaranteeText: 'Karta talab qilinmaydi • 15 daqiqada sozlash • Istalgan vaqtda bekor qilish',
     },
     footer: {
-      brandDesc: "Zamonaviy ta'lim markazlari, reppetitorlik va til akademiyalari uchun yagona ERP va CRM operatsion tizimi.",
-      security: "SOC2 sertifikatlangan va bank darajasidagi shifrlash",
+      brandDesc:
+        "Zamonaviy ta'lim markazlari, reppetitorlik va til akademiyalari uchun yagona ERP va CRM operatsion tizimi.",
+      security: 'SOC2 sertifikatlangan va bank darajasidagi shifrlash',
       modulesTitle: 'Modullar',
       solutionsTitle: 'Yechimlar',
       solutions: [
@@ -666,9 +751,11 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     demoModal: {
       personalizedWalkthrough: 'Shaxsiy 1-ga-1 tushuntirish',
       title: 'Markazingiz uchun jonli demo buyurtma qiling',
-      subtitle: 'A.L.I.A markazingiz ish jarayoniga va filiallar tuzilmasiga qanday mos kelishini ko‘ring.',
+      subtitle:
+        'A.L.I.A markazingiz ish jarayoniga va filiallar tuzilmasiga qanday mos kelishini ko‘ring.',
       confirmedTitle: 'Demo so‘rovingiz tasdiqlandi!',
-      confirmedMessage: 'Rahmat! Mutaxassisimiz 15 daqiqa ichida siz bilan bog‘lanib, uchrashuv vaqtini belgilaydi.',
+      confirmedMessage:
+        'Rahmat! Mutaxassisimiz 15 daqiqa ichida siz bilan bog‘lanib, uchrashuv vaqtini belgilaydi.',
       stepContact: 'Aloqa ma’lumotlari',
       stepScale: 'Markaz hajmi',
       fullNameLabel: 'Ism va familiyangiz',
@@ -681,14 +768,41 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       studentsDropdownLabel: 'Faol o‘quvchilar soni',
       studentsSearchPlaceholder: 'Sig‘im bo‘yicha qidirish...',
       preferredTimeLabel: 'Demo qo‘ng‘irog‘i uchun qulay vaqt',
-      timeOptions: ['Ertalab (9:00 - 12:00)', 'Tushdan keyin (12:00 - 17:00)', 'Kechqurun (17:00 - 20:00)', 'Bugun istalgan vaqtda'],
+      timeOptions: [
+        'Ertalab (9:00 - 12:00)',
+        'Tushdan keyin (12:00 - 17:00)',
+        'Kechqurun (17:00 - 20:00)',
+        'Bugun istalgan vaqtda',
+      ],
       backBtn: 'Orqaga',
       confirmBtn: 'Tasdiqlash va Demoga yozilish',
       studentsOptions: [
-        { value: 'Under 100', label: '100 tagacha o‘quvchi', description: 'Kichik filial / studiya', icon: Users },
-        { value: '100-300', label: '100 - 300 ta o‘quvchi', description: 'Rivojlanayotgan akademiya / 1-2 filial', icon: Users, badge: 'Ommabop' },
-        { value: '300-800', label: '300 - 800 ta o‘quvchi', description: 'Yirik ko‘p filialli markaz', icon: Users },
-        { value: '800+', label: '800+ ta o‘quvchi (Franchayzi)', description: 'Katta tarmoq va franchayzing', icon: Building2, badge: 'Enterprise' },
+        {
+          value: 'Under 100',
+          label: '100 tagacha o‘quvchi',
+          description: 'Kichik filial / studiya',
+          icon: Users,
+        },
+        {
+          value: '100-300',
+          label: '100 - 300 ta o‘quvchi',
+          description: 'Rivojlanayotgan akademiya / 1-2 filial',
+          icon: Users,
+          badge: 'Ommabop',
+        },
+        {
+          value: '300-800',
+          label: '300 - 800 ta o‘quvchi',
+          description: 'Yirik ko‘p filialli markaz',
+          icon: Users,
+        },
+        {
+          value: '800+',
+          label: '800+ ta o‘quvchi (Franchayzi)',
+          description: 'Katta tarmoq va franchayzing',
+          icon: Building2,
+          badge: 'Enterprise',
+        },
       ],
     },
   },
@@ -705,43 +819,49 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       bookDemo: 'Бесплатное демо',
     },
     team: {
-      badge: "Основатели компании",
-      heading: "Команда, стоящая за A.L.I.A",
-      subheading: "Познакомьтесь с экспертами, которые создают инновации и автоматизируют процессы для образовательных центров.",
+      badge: 'Основатели компании',
+      heading: 'Команда, стоящая за A.L.I.A',
+      subheading:
+        'Познакомьтесь с экспертами, которые создают инновации и автоматизируют процессы для образовательных центров.',
       members: [
         {
           id: '1',
           name: 'Nurulloh Islomov',
           role: 'Co-Founder & CEO',
-          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
           bio: 'Предприниматель и стратег с 7-летним опытом в сфере EdTech.',
         },
         {
           id: '2',
           name: 'Diyor Khasanov',
           role: 'Co-Founder & CTO',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
           bio: 'Архитектор высоконагруженных облачных систем и безопасности данных.',
         },
         {
           id: '3',
           name: 'Abdulmajid Sharipov',
           role: 'Head of Product & UX',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
           bio: 'Эксперт по продуктовому дизайну и интуитивным пользовательским интерфейсам.',
         },
         {
           id: '4',
           name: 'Muhammadali Yoqubjonov',
           role: 'Lead Full-Stack Engineer',
-          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
           bio: 'Ведущий разработчик React, Next.js и микросервисной архитектуры.',
         },
         {
           id: '5',
           name: 'Team Member (Coming Soon)',
           role: 'Head of Customer Success',
-          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
           bio: 'Руководитель направления онбординга и заботы о клиентах.',
         },
       ],
@@ -751,7 +871,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       titlePart1: 'Управляйте своим',
       titleHighlight: 'учебным центром',
       titlePart2: 'на 100% прозрачно и без потерь.',
-      description: 'Все-в-одном ERP & CRM система, созданная специально для современных учебных центров, языковых академий и IT-школ. Автоматизируйте продажи, посещаемость, биллинг и работу филиалов.',
+      description:
+        'Все-в-одном ERP & CRM система, созданная специально для современных учебных центров, языковых академий и IT-школ. Автоматизируйте продажи, посещаемость, биллинг и работу филиалов.',
       bookDemoBtn: 'Записаться на 1-на-1 демо',
       watchTourBtn: 'Интерактивный обзор',
       trustTrial: '14 дней бесплатного периода',
@@ -789,7 +910,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     comparison: {
       badge: 'Остановите хаос в Excel и Telegram',
       heading: 'Почему традиционные методы управления стоят дороже, чем вы думаете',
-      subheading: 'Ведение учета на бумаге или в разрозненных чатах приводит к долгам, утерянным лидам и выгоранию администраторов.',
+      subheading:
+        'Ведение учета на бумаге или в разрозненных чатах приводит к долгам, утерянным лидам и выгоранию администраторов.',
       oldWayTitle: 'Старый подход (Excel, бумаги и чаты)',
       oldWayTag: 'Высокий риск и потери',
       newWayTitle: 'Решение A.L.I.A',
@@ -825,14 +947,37 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     features: {
       badge: 'Полный функционал',
       heading: 'Все необходимые инструменты для масштабирования вашего центра',
-      subheading: 'Персонализированные рабочие места для директоров, продаж, учителей, учеников и родителей.',
+      subheading:
+        'Персонализированные рабочие места для директоров, продаж, учителей, учеников и родителей.',
       filterLabel: 'Фильтр модулей по ролям',
       requestDemo: 'Запросить демо этого модуля',
       roleFilterOptions: [
-        { value: 'all', label: 'Все модули', description: 'Обзор всех возможностей платформы', icon: Filter },
-        { value: 'admin', label: 'Админ и Владельцы', description: 'Аналитика филиалов, зарплаты и биллинг', icon: Building2, badge: 'Полный контроль' },
-        { value: 'sales', label: 'CRM и Продажи', description: 'Лиды, воронка и авто-SMS', icon: PhoneCall, badge: '+35% Продаж' },
-        { value: 'teacher', label: 'Преподаватели', description: 'QR-посещаемость и журналы', icon: QrCode },
+        {
+          value: 'all',
+          label: 'Все модули',
+          description: 'Обзор всех возможностей платформы',
+          icon: Filter,
+        },
+        {
+          value: 'admin',
+          label: 'Админ и Владельцы',
+          description: 'Аналитика филиалов, зарплаты и биллинг',
+          icon: Building2,
+          badge: 'Полный контроль',
+        },
+        {
+          value: 'sales',
+          label: 'CRM и Продажи',
+          description: 'Лиды, воронка и авто-SMS',
+          icon: PhoneCall,
+          badge: '+35% Продаж',
+        },
+        {
+          value: 'teacher',
+          label: 'Преподаватели',
+          description: 'QR-посещаемость и журналы',
+          icon: QrCode,
+        },
       ],
       modules: [
         {
@@ -840,73 +985,110 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'sales',
           title: 'CRM и Воронка Лидов',
           tagline: 'Быстрее превращайте заявки в оплативших учеников',
-          description: 'Отслеживайте входящие заявки из Instagram, Facebook, сайта и визитов. Автоматическое распределение и SMS-напоминания.',
+          description:
+            'Отслеживайте входящие заявки из Instagram, Facebook, сайта и визитов. Автоматическое распределение и SMS-напоминания.',
           badge: 'Рост продаж +35%',
           icon: PhoneCall,
           color: 'from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400',
-          highlights: ['Мультиканальный захват лидов', 'Kanban-доска сделок', 'Авто SMS и WhatsApp касания', 'Статистика менеджеров'],
+          highlights: [
+            'Мультиканальный захват лидов',
+            'Kanban-доска сделок',
+            'Авто SMS и WhatsApp касания',
+            'Статистика менеджеров',
+          ],
         },
         {
           id: 'student-mgmt',
           role: 'admin',
           title: 'Администрирование Учеников',
           tagline: 'Полный жизненный цикл студента',
-          description: 'Управляйте группами, расписанием, профилями учеников, переводами между филиалами и выдачей сертификатов.',
+          description:
+            'Управляйте группами, расписанием, профилями учеников, переводами между филиалами и выдачей сертификатов.',
           badge: 'На 90% меньше рутины',
           icon: GraduationCap,
           color: 'from-violet-500/20 to-purple-500/20 border-violet-500/30 text-violet-400',
-          highlights: ['Расписание и лимиты групп', 'История и статусы ученика', 'Генератор сертификатов', 'Переводы между филиалами'],
+          highlights: [
+            'Расписание и лимиты групп',
+            'История и статусы ученика',
+            'Генератор сертификатов',
+            'Переводы между филиалами',
+          ],
         },
         {
           id: 'attendance',
           role: 'teacher',
           title: 'Умная Посещаемость и QR Check-in',
           tagline: 'Мгновенный чек-ин с авто-уведомлением родителей',
-          description: 'Преподаватели или администраторы сканируют QR-пропуск ученика. Родители мгновенно получают SMS о приходе.',
+          description:
+            'Преподаватели или администраторы сканируют QR-пропуск ученика. Родители мгновенно получают SMS о приходе.',
           badge: '0% обмана с посещаемостью',
           icon: QrCode,
           color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400',
-          highlights: ['Генератор QR-пропусков', 'Автоматические SMS родителям', 'Учет опозданий и болезней', 'Электронный журнал урока'],
+          highlights: [
+            'Генератор QR-пропусков',
+            'Автоматические SMS родителям',
+            'Учет опозданий и болезней',
+            'Электронный журнал урока',
+          ],
         },
         {
           id: 'finance',
           role: 'admin',
           title: 'Биллинг, Контроль Долгов и Зарплата',
           tagline: 'Прозрачные финансы и автоматические чеки',
-          description: 'Автоматизируйте ежемесячные списания, скидки, напоминания должникам и расчет зарплат учителей по KPI.',
+          description:
+            'Автоматизируйте ежемесячные списания, скидки, напоминания должникам и расчет зарплат учителей по KPI.',
           badge: 'Финансы без долгов',
           icon: CreditCard,
           color: 'from-blue-500/20 to-cyan-500/20 border-blue-500/30 text-blue-400',
-          highlights: ['Онлайн-оплата обучения', 'SMS-напоминания должникам', 'Гибкие скидки и стипендии', 'Авторасчет зарплаты по KPI'],
+          highlights: [
+            'Онлайн-оплата обучения',
+            'SMS-напоминания должникам',
+            'Гибкие скидки и стипендии',
+            'Авторасчет зарплаты по KPI',
+          ],
         },
         {
           id: 'lms',
           role: 'student',
           title: 'LMS, Домашние Задания и Тесты',
           tagline: 'Вовлекайте студентов и за пределами классов',
-          description: 'Учителя загружают домашние задания, видео и тесты. Ученики сдают работы онлайн и участвуют в рейтинге.',
+          description:
+            'Учителя загружают домашние задания, видео и тесты. Ученики сдают работы онлайн и участвуют в рейтинге.',
           badge: '2x выше вовлеченность',
           icon: BookOpen,
           color: 'from-pink-500/20 to-rose-500/20 border-pink-500/30 text-pink-400',
-          highlights: ['Хранилище видеоуроков', 'Онлайн проверка домашних заданий', 'Геймификация и рейтинг студентов', 'Автопроверка тестов'],
+          highlights: [
+            'Хранилище видеоуроков',
+            'Онлайн проверка домашних заданий',
+            'Геймификация и рейтинг студентов',
+            'Автопроверка тестов',
+          ],
         },
         {
           id: 'analytics',
           role: 'admin',
           title: 'Аналитика Сети и BI',
           tagline: 'Дашборд руководителя в реальном времени',
-          description: 'Мониторинг ключевых метрик всех филиалов. Прогнозы доходов, отток студентов, окупаемость маркетинга и лучшие учителя.',
+          description:
+            'Мониторинг ключевых метрик всех филиалов. Прогнозы доходов, отток студентов, окупаемость маркетинга и лучшие учителя.',
           badge: '360° Обзор бизнеса',
           icon: BarChart3,
           color: 'from-indigo-500/20 to-sky-500/20 border-indigo-500/30 text-indigo-400',
-          highlights: ['Сводный отчет по филиалам', 'Анализ удержания клиентов', 'Прогнозирование cashflow', 'Экспорт в PDF и Excel'],
+          highlights: [
+            'Сводный отчет по филиалам',
+            'Анализ удержания клиентов',
+            'Прогнозирование cashflow',
+            'Экспорт в PDF и Excel',
+          ],
         },
       ],
     },
     tour: {
       badge: 'Интерактивный процесс',
       heading: 'Взгляните на систему изнутри',
-      subheading: 'Переключайтесь между ключевыми модулями, чтобы увидеть, как A.L.I.A упрощает работу.',
+      subheading:
+        'Переключайтесь между ключевыми модулями, чтобы увидеть, как A.L.I.A упрощает работу.',
       seeDemoBtn: 'Смотреть полное демо',
       liveInterface: 'Интерфейс платформы',
       synced: '100% Синхронизация',
@@ -960,7 +1142,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     roi: {
       badge: 'Калькулятор Экономии',
       heading: 'Рассчитайте, сколько времени и денег сэкономит A.L.I.A',
-      subheading: 'Укажите параметры вашего центра, чтобы увидеть экономию часов администрирования и возвращенные средства.',
+      subheading:
+        'Укажите параметры вашего центра, чтобы увидеть экономию часов администрирования и возвращенные средства.',
       slider1Label: 'Всего активных учеников',
       slider2Label: 'Количество филиалов',
       slider1Unit: 'учеников',
@@ -977,7 +1160,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     testimonials: {
       badge: 'Проверенные результаты',
       heading: 'Отзывы директоров и основателей учебных центров',
-      subheading: 'Узнайте, как руководители трансформировали работу, удержание клиентов и выручку с помощью A.L.I.A.',
+      subheading:
+        'Узнайте, как руководители трансформировали работу, удержание клиентов и выручку с помощью A.L.I.A.',
       testimonials: [
         {
           quote:
@@ -986,7 +1170,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Основатель & CEO',
           company: 'Apex Education Center (4 филиала)',
           stats: '+45% Рост выручки',
-          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
         },
         {
           quote:
@@ -995,7 +1180,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Академический директор',
           company: 'Bright Minds Language Academy',
           stats: '2 часа экономии ежедневно',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
         },
         {
           quote:
@@ -1004,7 +1190,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Генеральный директор',
           company: 'ProTech IT Academy',
           stats: '6 филиалов объединены',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
         },
       ],
     },
@@ -1111,13 +1298,15 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     cta: {
       heading: 'Готовы трансформировать управление вашим учебным центром?',
-      subheading: 'Присоединяйтесь к 350+ современным центрам уже сегодня. Закажите демонстрацию и устраните хаос в учете.',
+      subheading:
+        'Присоединяйтесь к 350+ современным центрам уже сегодня. Закажите демонстрацию и устраните хаос в учете.',
       bookDemoBtn: 'Заказать демонстрацию',
       freeTrialBtn: '14 дней бесплатного периода',
       guaranteeText: 'Без банковской карты • Запуск за 15 минут • Отмена в любое время',
     },
     footer: {
-      brandDesc: 'Единая ERP & CRM операционная система для управления учебными центрами, языковыми школами и IT-академиями.',
+      brandDesc:
+        'Единая ERP & CRM операционная система для управления учебными центрами, языковыми школами и IT-академиями.',
       security: 'Сертификация SOC2 и банковский уровень шифрования',
       modulesTitle: 'Модули',
       solutionsTitle: 'Решения для',
@@ -1141,7 +1330,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       title: 'Закажите демонстрацию для вашего центра',
       subtitle: 'Узнайте, как A.L.I.A адаптируется под ваши процессы и структуру филиалов.',
       confirmedTitle: 'Заявка на демо подтверждена!',
-      confirmedMessage: 'Спасибо! Наш специалист свяжется с вами в течение 15 минут для согласования времени демонстрации.',
+      confirmedMessage:
+        'Спасибо! Наш специалист свяжется с вами в течение 15 минут для согласования времени демонстрации.',
       stepContact: 'Контакты',
       stepScale: 'Масштаб центра',
       fullNameLabel: 'Ваше имя и фамилия',
@@ -1154,14 +1344,41 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       studentsDropdownLabel: 'Количество активных учеников',
       studentsSearchPlaceholder: 'Поиск по количеству...',
       preferredTimeLabel: 'Удобное время для демо-звонка',
-      timeOptions: ['Утром (9:00 - 12:00)', 'Днем (12:00 - 17:00)', 'Вечером (17:00 - 20:00)', 'В любое время сегодня'],
+      timeOptions: [
+        'Утром (9:00 - 12:00)',
+        'Днем (12:00 - 17:00)',
+        'Вечером (17:00 - 20:00)',
+        'В любое время сегодня',
+      ],
       backBtn: 'Назад',
       confirmBtn: 'Подтвердить и забронировать демо',
       studentsOptions: [
-        { value: 'Under 100', label: 'До 100 учеников', description: 'Небольшой филиал / студия', icon: Users },
-        { value: '100-300', label: '100 - 300 учеников', description: 'Растущая академия / 1-2 филиала', icon: Users, badge: 'Популярно' },
-        { value: '300-800', label: '300 - 800 учеников', description: 'Крупный многофилиальный центр', icon: Users },
-        { value: '800+', label: '800+ учеников (Франшиза)', description: 'Крупная сеть и франчайзинг', icon: Building2, badge: 'Enterprise' },
+        {
+          value: 'Under 100',
+          label: 'До 100 учеников',
+          description: 'Небольшой филиал / студия',
+          icon: Users,
+        },
+        {
+          value: '100-300',
+          label: '100 - 300 учеников',
+          description: 'Растущая академия / 1-2 филиала',
+          icon: Users,
+          badge: 'Популярно',
+        },
+        {
+          value: '300-800',
+          label: '300 - 800 учеников',
+          description: 'Крупный многофилиальный центр',
+          icon: Users,
+        },
+        {
+          value: '800+',
+          label: '800+ учеников (Франшиза)',
+          description: 'Крупная сеть и франчайзинг',
+          icon: Building2,
+          badge: 'Enterprise',
+        },
       ],
     },
   },
@@ -1178,43 +1395,49 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       bookDemo: 'Free Demo',
     },
     team: {
-      badge: "Startup Founders & Leadership",
-      heading: "Meet the Team Behind A.L.I.A",
-      subheading: "Passionate innovators, engineers, and education leaders building the future of learning center operations.",
+      badge: 'Startup Founders & Leadership',
+      heading: 'Meet the Team Behind A.L.I.A',
+      subheading:
+        'Passionate innovators, engineers, and education leaders building the future of learning center operations.',
       members: [
         {
           id: '1',
           name: 'Nurulloh Islomov',
           role: 'Co-Founder & CEO',
-          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
           bio: 'EdTech strategist and entrepreneur with 7+ years scaling software solutions.',
         },
         {
           id: '2',
           name: 'Diyor Khasanov',
           role: 'Co-Founder & CTO',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
           bio: 'Cloud systems architect specializing in high-throughput enterprise security.',
         },
         {
           id: '3',
           name: 'Abdulmajid Sharipov',
           role: 'Head of Product & UX',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
           bio: 'Product designer obsessed with crafting effortless workflows for educators.',
         },
         {
           id: '4',
           name: 'Muhammadali Yoqubjonov',
           role: 'Lead Full-Stack Engineer',
-          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
           bio: 'Full-stack engineering wizard specialized in React, Next.js & real-time APIs.',
         },
         {
           id: '5',
           name: 'Team Member (Coming Soon)',
           role: 'Head of Customer Success',
-          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
           bio: 'Dedicated leader ensuring seamless customer onboarding and 24/7 success.',
         },
       ],
@@ -1224,7 +1447,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       titlePart1: 'Run your',
       titleHighlight: 'learning center',
       titlePart2: 'with 100% clarity & zero loss.',
-      description: 'All-in-one ERP & CRM system built specifically for modern education centers, language academies, and IT schools. Automate sales, attendance, billing, parent SMS, and multi-branch operations.',
+      description:
+        'All-in-one ERP & CRM system built specifically for modern education centers, language academies, and IT schools. Automate sales, attendance, billing, parent SMS, and multi-branch operations.',
       bookDemoBtn: 'Book Free 1-on-1 Demo',
       watchTourBtn: 'Watch Interactive Tour',
       trustTrial: '14-Day Free Trial',
@@ -1262,7 +1486,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     comparison: {
       badge: 'Stop Chaos in Excel & Telegram',
       heading: 'Why traditional management tools are costlier than you think',
-      subheading: 'Managing a learning center on paper or disjointed apps causes uncollected debts, lost leads, parent complaints, and administrative burnout.',
+      subheading:
+        'Managing a learning center on paper or disjointed apps causes uncollected debts, lost leads, parent complaints, and administrative burnout.',
       oldWayTitle: 'The Old Way (Excel, Papers & Chat)',
       oldWayTag: 'High Risk & Loss',
       newWayTitle: 'The A.L.I.A Solution',
@@ -1271,7 +1496,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         {
           category: 'Lead & Student Management',
           oldWay: 'Lost leads in Telegram groups and messy Excel sheets with no sales history.',
-          newWay: 'Unified CRM pipeline with automatic lead capture, status tags, and SMS follow-ups.',
+          newWay:
+            'Unified CRM pipeline with automatic lead capture, status tags, and SMS follow-ups.',
         },
         {
           category: 'Attendance & Class Tracking',
@@ -1281,31 +1507,57 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         {
           category: 'Financials & Monthly Tuition',
           oldWay: 'Cash recording mistakes, uncollected debts, and chaotic receipt printing.',
-          newWay: 'Automated billing, online payment gateway integrations, and instant debtor reports.',
+          newWay:
+            'Automated billing, online payment gateway integrations, and instant debtor reports.',
         },
         {
           category: 'Teacher Payroll & KPIs',
           oldWay: 'Complex end-of-month manual KPI calculations for variable hourly salaries.',
-          newWay: 'Automated salary calculation based on student retention, hours, and class attendance.',
+          newWay:
+            'Automated salary calculation based on student retention, hours, and class attendance.',
         },
         {
           category: 'Parent & Student Communication',
           oldWay: 'Scattered phone calls, missed announcements, and untracked student grades.',
-          newWay: 'Dedicated Mobile App & Student/Parent portal for grades, schedules, and payments.',
+          newWay:
+            'Dedicated Mobile App & Student/Parent portal for grades, schedules, and payments.',
         },
       ],
     },
     features: {
       badge: 'Complete Functionality',
       heading: 'Everything you need to scale your learning center',
-      subheading: 'Tailored views and tools for Administrators, Sales Managers, Teachers, Students, and Parents.',
+      subheading:
+        'Tailored views and tools for Administrators, Sales Managers, Teachers, Students, and Parents.',
       filterLabel: 'Filter Modules by Role',
       requestDemo: 'Request live demo of this module',
       roleFilterOptions: [
-        { value: 'all', label: 'All Modules', description: 'Overview of all platform capabilities', icon: Filter },
-        { value: 'admin', label: 'Admin & Owners', description: 'Multi-branch BI, payroll & billing', icon: Building2, badge: 'Full Control' },
-        { value: 'sales', label: 'CRM & Sales', description: 'Leads, pipelines & automated SMS', icon: PhoneCall, badge: '+35% Leads' },
-        { value: 'teacher', label: 'Teachers', description: 'QR attendance, class logs & KPIs', icon: QrCode },
+        {
+          value: 'all',
+          label: 'All Modules',
+          description: 'Overview of all platform capabilities',
+          icon: Filter,
+        },
+        {
+          value: 'admin',
+          label: 'Admin & Owners',
+          description: 'Multi-branch BI, payroll & billing',
+          icon: Building2,
+          badge: 'Full Control',
+        },
+        {
+          value: 'sales',
+          label: 'CRM & Sales',
+          description: 'Leads, pipelines & automated SMS',
+          icon: PhoneCall,
+          badge: '+35% Leads',
+        },
+        {
+          value: 'teacher',
+          label: 'Teachers',
+          description: 'QR attendance, class logs & KPIs',
+          icon: QrCode,
+        },
       ],
       modules: [
         {
@@ -1313,73 +1565,110 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'sales',
           title: 'Lead CRM & Pipeline',
           tagline: 'Convert inquiries into paying students faster',
-          description: 'Track incoming leads from Instagram, Facebook, Website, and Walk-ins. Manage status pipelines, auto-assign managers, and send automated SMS reminders.',
+          description:
+            'Track incoming leads from Instagram, Facebook, Website, and Walk-ins. Manage status pipelines, auto-assign managers, and send automated SMS reminders.',
           badge: 'Sales Boost +35%',
           icon: PhoneCall,
           color: 'from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400',
-          highlights: ['Multi-channel lead capture', 'Kanban deal board', 'Automated SMS & WhatsApp follow-ups', 'Manager performance stats'],
+          highlights: [
+            'Multi-channel lead capture',
+            'Kanban deal board',
+            'Automated SMS & WhatsApp follow-ups',
+            'Manager performance stats',
+          ],
         },
         {
           id: 'student-mgmt',
           role: 'admin',
           title: 'Student & Course Administration',
           tagline: 'Complete student lifecycle management',
-          description: 'Manage groups, timetables, student profiles, group transfers, course materials, certificates, and academic histories effortlessly.',
+          description:
+            'Manage groups, timetables, student profiles, group transfers, course materials, certificates, and academic histories effortlessly.',
           badge: '90% Less Admin Time',
           icon: GraduationCap,
           color: 'from-violet-500/20 to-purple-500/20 border-violet-500/30 text-violet-400',
-          highlights: ['Group scheduling & capacity limits', 'Student history & status tracking', 'Certificate generation', 'Branch-to-branch transfers'],
+          highlights: [
+            'Group scheduling & capacity limits',
+            'Student history & status tracking',
+            'Certificate generation',
+            'Branch-to-branch transfers',
+          ],
         },
         {
           id: 'attendance',
           role: 'teacher',
           title: 'Smart Attendance & QR Check-in',
           tagline: 'Instant check-in with auto Parent notifications',
-          description: 'Teachers or front-desk admins scan student QR passes or use biometric check-in. Parents receive instant notification when students arrive or miss class.',
+          description:
+            'Teachers or front-desk admins scan student QR passes or use biometric check-in. Parents receive instant notification when students arrive or miss class.',
           badge: 'Zero Attendance Fraud',
           icon: QrCode,
           color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400',
-          highlights: ['Student QR pass generator', 'Instant automated Parent SMS', 'Late arrival & sickness tracking', 'Teacher class logs'],
+          highlights: [
+            'Student QR pass generator',
+            'Instant automated Parent SMS',
+            'Late arrival & sickness tracking',
+            'Teacher class logs',
+          ],
         },
         {
           id: 'finance',
           role: 'admin',
           title: 'Billing, Debt Control & Payroll',
           tagline: 'Full financial transparency and automated receipts',
-          description: 'Automate monthly tuition billing, handle partial discounts, manage debtor notifications, and calculate teacher salaries based on hourly rates or student count.',
+          description:
+            'Automate monthly tuition billing, handle partial discounts, manage debtor notifications, and calculate teacher salaries based on hourly rates or student count.',
           badge: 'Zero Uncollected Debts',
           icon: CreditCard,
           color: 'from-blue-500/20 to-cyan-500/20 border-blue-500/30 text-blue-400',
-          highlights: ['Online payment integrations', 'Automated debt reminders via SMS', 'Custom discounts & scholarships', 'Teacher KPI & salary auto-calculation'],
+          highlights: [
+            'Online payment integrations',
+            'Automated debt reminders via SMS',
+            'Custom discounts & scholarships',
+            'Teacher KPI & salary auto-calculation',
+          ],
         },
         {
           id: 'lms',
           role: 'student',
           title: 'LMS, Homework & Quiz Platform',
           tagline: 'Engage students beyond the classroom',
-          description: 'Teachers upload homework assignments, video lectures, and quizzes. Students submit work online, view leaderboards, and receive teacher feedback.',
+          description:
+            'Teachers upload homework assignments, video lectures, and quizzes. Students submit work online, view leaderboards, and receive teacher feedback.',
           badge: '2x Student Engagement',
           icon: BookOpen,
           color: 'from-pink-500/20 to-rose-500/20 border-pink-500/30 text-pink-400',
-          highlights: ['Video lesson storage', 'Online homework submission & grading', 'Gamified student rank & coin rewards', 'Automated quiz scoring'],
+          highlights: [
+            'Video lesson storage',
+            'Online homework submission & grading',
+            'Gamified student rank & coin rewards',
+            'Automated quiz scoring',
+          ],
         },
         {
           id: 'analytics',
           role: 'admin',
           title: 'Multi-Branch Analytics & BI',
           tagline: 'Real-time executive dashboard for owners',
-          description: 'Monitor key metrics across all branches in real-time. View revenue forecasts, student drop-out rates, marketing ROI, and top-performing teachers.',
+          description:
+            'Monitor key metrics across all branches in real-time. View revenue forecasts, student drop-out rates, marketing ROI, and top-performing teachers.',
           badge: '360° Executive View',
           icon: BarChart3,
           color: 'from-indigo-500/20 to-sky-500/20 border-indigo-500/30 text-indigo-400',
-          highlights: ['Multi-branch consolidated view', 'Student retention analytics', 'Financial cashflow forecasting', 'Exportable PDF & Excel reports'],
+          highlights: [
+            'Multi-branch consolidated view',
+            'Student retention analytics',
+            'Financial cashflow forecasting',
+            'Exportable PDF & Excel reports',
+          ],
         },
       ],
     },
     tour: {
       badge: 'Interactive Workflow',
       heading: 'Take a closer look inside the platform',
-      subheading: 'Click through the core workflows to experience how A.L.I.A simplifies daily management for learning centers.',
+      subheading:
+        'Click through the core workflows to experience how A.L.I.A simplifies daily management for learning centers.',
       seeDemoBtn: 'See Full Demo in Action',
       liveInterface: 'Live Interface',
       synced: '100% Synced',
@@ -1433,7 +1722,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     roi: {
       badge: 'Interactive Savings Estimator',
       heading: 'Calculate how much time & money A.L.I.A will save you',
-      subheading: 'Adjust your center’s numbers to see estimated weekly hours saved on manual admin work, uncollected tuition recovered, and recovered leads.',
+      subheading:
+        'Adjust your center’s numbers to see estimated weekly hours saved on manual admin work, uncollected tuition recovered, and recovered leads.',
       slider1Label: 'Total Active Students',
       slider2Label: 'Number of Branches',
       slider1Unit: 'Students',
@@ -1450,7 +1740,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     testimonials: {
       badge: 'Proven Results',
       heading: 'Loved by learning center directors & founders',
-      subheading: 'Hear how leaders transformed their educational operations, student retention, and revenue with A.L.I.A.',
+      subheading:
+        'Hear how leaders transformed their educational operations, student retention, and revenue with A.L.I.A.',
       testimonials: [
         {
           quote:
@@ -1459,7 +1750,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Founder & CEO',
           company: 'Apex Education Center (4 Branches)',
           stats: '+45% Revenue Growth',
-          image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
         },
         {
           quote:
@@ -1468,7 +1760,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'Academic Director',
           company: 'Bright Minds Language Academy',
           stats: '2 Hours Saved Daily',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
         },
         {
           quote:
@@ -1477,7 +1770,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           role: 'General Director',
           company: 'ProTech IT Academy',
           stats: '6 Branches Unified',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+          image:
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
         },
       ],
     },
@@ -1584,13 +1878,15 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
     },
     cta: {
       heading: 'Ready to transform your learning center operations?',
-      subheading: 'Join 350+ modern education centers today. Get a customized demo and see how A.L.I.A can eliminate chaos and boost your revenue.',
+      subheading:
+        'Join 350+ modern education centers today. Get a customized demo and see how A.L.I.A can eliminate chaos and boost your revenue.',
       bookDemoBtn: 'Book Your Live Demo Now',
       freeTrialBtn: 'Start 14-Day Free Trial',
       guaranteeText: 'No credit card required • Instant setup • Cancel anytime',
     },
     footer: {
-      brandDesc: 'The all-in-one ERP & CRM management operating system built for modern learning centers, tutoring hubs, and language academies.',
+      brandDesc:
+        'The all-in-one ERP & CRM management operating system built for modern learning centers, tutoring hubs, and language academies.',
       security: 'SOC2 Compliant & Bank-Grade Data Encryption',
       modulesTitle: 'Modules',
       solutionsTitle: 'Solutions For',
@@ -1614,7 +1910,8 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       title: 'Book a Live Demo for Your Center',
       subtitle: 'See how A.L.I.A fits your learning center’s exact workflow & branch structure.',
       confirmedTitle: 'Demo Request Confirmed!',
-      confirmedMessage: 'Thank you! Our education systems specialist will reach out to you via WhatsApp / Phone within 15 minutes to schedule your walkthrough.',
+      confirmedMessage:
+        'Thank you! Our education systems specialist will reach out to you via WhatsApp / Phone within 15 minutes to schedule your walkthrough.',
       stepContact: 'Contact Info',
       stepScale: 'Center Scale',
       fullNameLabel: 'Your Full Name',
@@ -1627,14 +1924,41 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
       studentsDropdownLabel: 'Number of Active Students',
       studentsSearchPlaceholder: 'Filter student capacity...',
       preferredTimeLabel: 'Preferred Time for Demo Call',
-      timeOptions: ['Morning (9:00 - 12:00)', 'Afternoon (12:00 - 17:00)', 'Evening (17:00 - 20:00)', 'Anytime Today'],
+      timeOptions: [
+        'Morning (9:00 - 12:00)',
+        'Afternoon (12:00 - 17:00)',
+        'Evening (17:00 - 20:00)',
+        'Anytime Today',
+      ],
       backBtn: 'Back',
       confirmBtn: 'Confirm & Book Demo',
       studentsOptions: [
-        { value: 'Under 100', label: 'Under 100 Students', description: 'Boutique single branch / studio', icon: Users },
-        { value: '100-300', label: '100 - 300 Students', description: 'Growing academy / 1-2 branches', icon: Users, badge: 'Popular' },
-        { value: '300-800', label: '300 - 800 Students', description: 'Established multi-branch center', icon: Users },
-        { value: '800+', label: '800+ Students (Franchise)', description: 'Enterprise network & franchise', icon: Building2, badge: 'Enterprise' },
+        {
+          value: 'Under 100',
+          label: 'Under 100 Students',
+          description: 'Boutique single branch / studio',
+          icon: Users,
+        },
+        {
+          value: '100-300',
+          label: '100 - 300 Students',
+          description: 'Growing academy / 1-2 branches',
+          icon: Users,
+          badge: 'Popular',
+        },
+        {
+          value: '300-800',
+          label: '300 - 800 Students',
+          description: 'Established multi-branch center',
+          icon: Users,
+        },
+        {
+          value: '800+',
+          label: '800+ Students (Franchise)',
+          description: 'Enterprise network & franchise',
+          icon: Building2,
+          badge: 'Enterprise',
+        },
       ],
     },
   },
