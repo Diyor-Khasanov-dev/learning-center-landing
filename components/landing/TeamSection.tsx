@@ -90,7 +90,7 @@ export function TeamSection() {
                     alt={member.name}
                     fill
                     sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                    className='object-cover object-center mix-blend-luminosity opacity-90 transition duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:mix-blend-normal'
+                    className='object-cover object-center opacity-85 transition duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:mix-blend-normal'
                   />
                   <div className='absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent' />
 
