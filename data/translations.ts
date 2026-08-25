@@ -241,8 +241,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '1',
           name: 'Nurulloh Islomov',
           role: 'Co-Founder & Backend Engineer',
-          image:
-            '/public/Nurulloh.png',
+          image: 'https://i.ibb.co/b5g6K6Sf/Nurulloh.png',
           github: 'https://github.com/nurulloh-coder-dev',
           linkedin: 'https://www.linkedin.com/in/nurilloh-islomov-9b4a43386',
         },
@@ -250,8 +249,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '2',
           name: 'Diyor Khasanov',
           role: 'Co-Founder & Frontend Engineer',
-          image:
-            '/public/Diyor.png',
+          image: 'https://i.ibb.co/qFJ3XCBC/Diyor.png',
           github: 'https://github.com/Diyor-Khasanov-dev',
           linkedin: 'https://linkedin.com/in/diyor-khasanov',
         },
@@ -259,8 +257,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '3',
           name: 'Abdulmajid Sharipov',
           role: 'Co-Founder & Frontend Engineer',
-          image:
-            '/public/Abdulmajid.png',
+          image: 'https://i.ibb.co/JjR8BBgf/Abdulmajid.png',
           github: 'https://github.com/Abdulmajidkhan007',
           linkedin: 'https://linkedin.com/in/abdulmajid-sharipov-profile',
         },
