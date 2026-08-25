@@ -241,7 +241,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '1',
           name: 'Nurulloh Islomov',
           role: 'Co-Founder & Backend Engineer',
-          image: 'https://i.ibb.co/b5g6K6Sf/Nurulloh.png',
+          image: '/Nurulloh.png',
           github: 'https://github.com/nurulloh-coder-dev',
           linkedin: 'https://www.linkedin.com/in/nurilloh-islomov-9b4a43386',
         },
@@ -249,7 +249,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '2',
           name: 'Diyor Khasanov',
           role: 'Co-Founder & Frontend Engineer',
-          image: 'https://i.ibb.co/qFJ3XCBC/Diyor.png',
+          image: '/Diyor.png',
           github: 'https://github.com/Diyor-Khasanov-dev',
           linkedin: 'https://linkedin.com/in/diyor-khasanov',
         },
@@ -257,7 +257,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '3',
           name: 'Abdulmajid Sharipov',
           role: 'Co-Founder & Frontend Engineer',
-          image: 'https://i.ibb.co/JjR8BBgf/Abdulmajid.png',
+          image: '/Abdulmajid.png',
           github: 'https://github.com/Abdulmajidkhan007',
           linkedin: 'https://linkedin.com/in/abdulmajid-sharipov-profile',
         },
@@ -825,24 +825,21 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '1',
           name: 'Nurulloh Islomov',
           role: 'Co-Founder & CEO',
-          image:
-            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          image: '/Nurulloh.png',
           bio: 'Предприниматель и стратег с 7-летним опытом в сфере EdTech.',
         },
         {
           id: '2',
           name: 'Diyor Khasanov',
           role: 'Co-Founder & CTO',
-          image:
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          image: '/Diyor.png',
           bio: 'Архитектор высоконагруженных облачных систем и безопасности данных.',
         },
         {
           id: '3',
           name: 'Abdulmajid Sharipov',
           role: 'Head of Product & UX',
-          image:
-            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          image: '/Abdulmajid.png',
           bio: 'Эксперт по продуктовому дизайну и интуитивным пользовательским интерфейсам.',
         },
         {
@@ -1401,24 +1398,21 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           id: '1',
           name: 'Nurulloh Islomov',
           role: 'Co-Founder & CEO',
-          image:
-            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+          image: '/Nurulloh.png',
           bio: 'EdTech strategist and entrepreneur with 7+ years scaling software solutions.',
         },
         {
           id: '2',
           name: 'Diyor Khasanov',
           role: 'Co-Founder & CTO',
-          image:
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+          image: '/Diyor.png',
           bio: 'Cloud systems architect specializing in high-throughput enterprise security.',
         },
         {
           id: '3',
           name: 'Abdulmajid Sharipov',
           role: 'Head of Product & UX',
-          image:
-            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+          image: '/Abdulmajid.png',
           bio: 'Product designer obsessed with crafting effortless workflows for educators.',
         },
         {
