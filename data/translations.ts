@@ -264,7 +264,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         {
           id: '4',
           name: 'Muhammadali Yoqubjonov',
-          role: 'Co-Founder & Frontend Engineer',
+          role: 'Co-Founder & Backend Engineer',
           image:
             '/Muhammadali.png',
           github: 'https://github.com/goodman113',
@@ -273,7 +273,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
         {
           id: '5',
           name: 'Oybek Abdullayev',
-          role: 'Co-Founder & Backend Engineer',
+          role: 'Co-Founder & Frontend Engineer',
           image:
             'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
           github: 'https://github.com/powerful10',
