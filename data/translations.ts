@@ -266,7 +266,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           name: 'Muhammadali Yoqubjonov',
           role: 'Co-Founder & Frontend Engineer',
           image:
-            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+            '/Muhammadali.png',
           github: 'https://github.com/goodman113',
           linkedin: 'https://www.linkedin.com/in/muhammadali-yokubjonov-2241972b6/',
         },
