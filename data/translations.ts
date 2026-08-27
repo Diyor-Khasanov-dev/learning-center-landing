@@ -275,7 +275,7 @@ export const TRANSLATIONS: Record<Language, LanguageTranslationBundle> = {
           name: 'Oybek Abdullayev',
           role: 'Co-Founder & Frontend Engineer',
           image:
-            'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80',
+            '/Oybek.png',
           github: 'https://github.com/powerful10',
           linkedin: 'https://linkedin.com/in/oybek-abdullayev-720a41401',
         },
