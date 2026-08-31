@@ -20,7 +20,7 @@ export function ThemeToggle({ className = '' }: ThemeToggleProps) {
 
   if (!isMounted) {
     return (
-      <div className={`h-9 w-9 rounded-xl border border-slate-200 bg-slate-100 dark:border-white/10 dark:bg-white/5 ${className}`} />
+      <div className={`h-9 w-9 rounded-md border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900 ${className}`} />
     )
   }
 
@@ -30,16 +30,16 @@ export function ThemeToggle({ className = '' }: ThemeToggleProps) {
       type='button'
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
       title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-      className={`relative inline-flex h-9 w-9 items-center justify-center rounded-xl border transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-500 ${
+      className={`relative inline-flex h-9 w-9 items-center justify-center rounded-md border transition-all duration-200 cursor-pointer ${
         theme === 'dark'
-          ? 'border-white/15 bg-white/5 text-amber-300 hover:bg-white/10 hover:text-amber-200'
-          : 'border-slate-200 bg-slate-100 text-indigo-600 hover:bg-slate-200 hover:text-indigo-700 shadow-xs'
+          ? 'border-neutral-800 bg-neutral-900 text-neutral-300 hover:bg-neutral-800 hover:text-white'
+          : 'border-neutral-200 bg-neutral-100 text-neutral-700 hover:bg-neutral-200 hover:text-black'
       } ${className}`}
     >
       {theme === 'dark' ? (
-        <Sun className='h-4 w-4 transition-transform duration-300 rotate-0 hover:rotate-45' />
+        <Sun className='h-4 w-4 text-blue-400 transition-transform duration-300 rotate-0 hover:rotate-45' />
       ) : (
-        <Moon className='h-4 w-4 transition-transform duration-300 rotate-0 hover:-rotate-12' />
+        <Moon className='h-4 w-4 text-blue-600 transition-transform duration-300 rotate-0 hover:-rotate-12' />
       )}
     </button>
   )
