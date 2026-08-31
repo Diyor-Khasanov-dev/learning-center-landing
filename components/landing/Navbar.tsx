@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Menu, X, ArrowRight, LogIn } from 'lucide-react'
 import { useDemoModal } from '@/context/DemoModalContext'
 import { useLanguage } from '@/context/LanguageContext'
@@ -10,16 +10,36 @@ import { LanguageSelector } from '@/components/ui/LanguageSelector'
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [scrollProgress, setScrollProgress] = useState(0)
   const { openDemoModal } = useDemoModal()
   const { language } = useLanguage()
   const t = TRANSLATIONS[language].nav
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight
+      if (totalHeight > 0) {
+        const currentProgress = (window.scrollY / totalHeight) * 100
+        setScrollProgress(currentProgress)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <header className='fixed top-0 left-0 right-0 z-50 border-b border-neutral-200 dark:border-neutral-800 bg-white/90 dark:bg-black/90 backdrop-blur-md transition-colors duration-200'>
+      {/* Scroll Progress Bar at the top edge */}
+      <div
+        className='h-[2.5px] bg-blue-600 dark:bg-blue-500 transition-all duration-150 ease-out'
+        style={{ width: `${scrollProgress}%` }}
+      />
+
       <nav className='mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 py-3.5'>
-        {/* Brand Logo - NO graphic logo image per prompt instructions ("DO NOT PUT LOGO. I'LL PUT IT") */}
+        {/* Brand Logo - NO graphic logo image per prompt instructions */}
         <a href='#' className='flex items-center gap-3 group shrink-0'>
-          <span className='text-xl font-black tracking-wider text-black dark:text-white uppercase'>
+          <span className='text-xl font-black tracking-wider text-black dark:text-white uppercase group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors'>
             A.L.I.A
           </span>
           <span className='hidden sm:inline-block rounded-full bg-blue-50 dark:bg-blue-950/80 px-2.5 py-0.5 text-[10px] font-bold text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900 tracking-wider uppercase'>
@@ -103,7 +123,7 @@ export function Navbar() {
           <ThemeToggle />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className='text-neutral-800 dark:text-neutral-200 p-2 rounded-md bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 cursor-pointer transition-colors'
+            className='text-neutral-800 dark:text-neutral-200 p-2 rounded-md bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 cursor-pointer transition-colors active:scale-95'
             aria-label='Toggle Menu'
           >
             {mobileMenuOpen ? <X className='h-5 w-5' /> : <Menu className='h-5 w-5' />}
