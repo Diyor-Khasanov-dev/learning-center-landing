@@ -12,40 +12,37 @@ export function CtaSection() {
   const t = TRANSLATIONS[language].cta
 
   return (
-    <section className='py-20 relative overflow-hidden'>
+    <section className='py-20 relative overflow-hidden bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 transition-colors duration-200'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10'>
-        <div className='relative rounded-3xl border border-violet-500/40 bg-gradient-to-r from-violet-950 via-indigo-900 to-slate-950 p-10 md:p-16 text-center space-y-6 shadow-2xl overflow-hidden backdrop-blur-2xl text-white'>
-
-          {/* Top Ambient Glow */}
-          <div className='pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-80 w-80 rounded-full bg-violet-500/30 blur-[110px]' />
+        <div className='relative rounded-2xl border border-neutral-800 bg-neutral-900 dark:bg-black p-10 md:p-16 text-center space-y-6 shadow-2xl overflow-hidden text-white'>
 
           <h2 className='text-3xl sm:text-5xl font-black tracking-tight text-white max-w-3xl mx-auto leading-tight'>
             {t.heading}
           </h2>
 
-          <p className='text-slate-200 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed'>
+          <p className='text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed'>
             {t.subheading}
           </p>
 
           <div className='flex flex-wrap items-center justify-center gap-4 pt-4'>
             <button
               onClick={openDemoModal}
-              className='inline-flex items-center gap-2.5 rounded-full bg-white px-8 py-4 text-base font-extrabold text-slate-950 shadow-2xl hover:bg-slate-100 hover:scale-[1.02] active:scale-98 transition-all cursor-pointer'
+              className='inline-flex items-center gap-2.5 rounded-md bg-blue-600 hover:bg-blue-700 px-8 py-4 text-base font-bold text-white shadow-xs transition-all cursor-pointer'
             >
-              <Sparkles className='h-4 w-4 text-amber-500' />
+              <Sparkles className='h-4 w-4 text-white' />
               <span>{t.bookDemoBtn}</span>
               <ArrowRight className='h-4 w-4' />
             </button>
             <button
               onClick={openDemoModal}
-              className='inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 text-base font-bold text-white hover:bg-white/20 transition-all backdrop-blur-md cursor-pointer'
+              className='inline-flex items-center gap-2 rounded-md border border-neutral-700 bg-neutral-800 hover:bg-neutral-700 px-8 py-4 text-base font-bold text-white transition-all cursor-pointer'
             >
               <span>{t.freeTrialBtn}</span>
             </button>
           </div>
 
-          <p className='text-xs text-slate-300 pt-2 flex items-center justify-center gap-2 font-medium'>
-            <ShieldCheck className='h-4 w-4 text-emerald-400' />
+          <p className='text-xs text-neutral-400 pt-2 flex items-center justify-center gap-2 font-medium'>
+            <ShieldCheck className='h-4 w-4 text-blue-400' />
             <span>{t.guaranteeText}</span>
           </p>
         </div>

@@ -6,104 +6,89 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom Minimalist Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f4f4f5;
 }
 
 .dark ::-webkit-scrollbar-track {
-  background: #07080e;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+  background: #d4d4d8;
+  border-radius: 3px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #1e223d;
+  background: #262626;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6366f1;
+  background: #2563eb;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #3b82f6;
 }
 
-/* Focus outline overrides */
+/* Minimalist Focus outline overrides */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
-select:focus-visible {
-  outline: 2px solid #6366f1;
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
 
 .dark button:focus-visible,
 .dark a:focus-visible,
 .dark input:focus-visible,
-.dark select:focus-visible {
-  outline: 2px solid #a78bfa;
+.dark select:focus-visible,
+.dark textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
-/* Realistic Bell Ringing Animation */
+/* Minimalist Subtle Animations */
 @keyframes bellRing {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(16deg);
-  }
-  20% {
-    transform: rotate(-14deg);
-  }
-  30% {
-    transform: rotate(12deg);
-  }
-  40% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(6deg);
-  }
-  60% {
-    transform: rotate(-4deg);
-  }
-  70% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-12deg); }
+  30% { transform: rotate(10deg); }
+  40% { transform: rotate(-8deg); }
+  50% { transform: rotate(4deg); }
+  60% { transform: rotate(-2deg); }
+  70% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes pulseRing {
   0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
   }
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0);
   }
   100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
   }
 }
 
 .animate-bell-ring {
   transform-origin: top center;
-  animation: bellRing 2.2s ease-in-out infinite;
+  animation: bellRing 2.5s ease-in-out infinite;
 }
 
 .animate-pulse-ring {
-  animation: pulseRing 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

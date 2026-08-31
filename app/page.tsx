@@ -96,7 +96,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
       />
-      <div className='min-h-screen bg-slate-50 dark:bg-[#07080e] text-slate-800 dark:text-slate-100 font-sans selection:bg-violet-500 selection:text-white relative overflow-x-hidden transition-colors duration-200'>
+      <div className='min-h-screen bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 font-sans selection:bg-blue-600 selection:text-white relative overflow-x-hidden transition-colors duration-200'>
         <Navbar />
         <main>
           <HeroSection />
