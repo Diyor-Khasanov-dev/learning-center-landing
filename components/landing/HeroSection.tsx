@@ -412,12 +412,12 @@ export function HeroSection() {
                   }`}
                   title='Click to trigger live notification'
                 >
-                  <div
-                    className={`relative flex h-10 w-10 items-center justify-center rounded-md bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900 shrink-0 ${
-                      isRinging ? 'animate-bell-active' : 'animate-bell-ring'
-                    }`}
-                  >
-                    <Bell className='h-5 w-5' />
+                  <div className='relative flex h-10 w-10 items-center justify-center rounded-md bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900 shrink-0'>
+                    <Bell
+                      className={`h-5 w-5 ${
+                        isRinging ? 'animate-bell-active' : 'animate-bell-ring'
+                      }`}
+                    />
                     {unreadCount > 0 && (
                       <span className='absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-600 text-[9px] font-bold text-white shadow-xs animate-ping-once'>
                         {unreadCount}
